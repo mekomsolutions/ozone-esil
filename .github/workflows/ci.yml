@@ -19,7 +19,7 @@ jobs:
       NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
 
-  release:
+  publish:
     if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'release' }}
     needs: validate
     uses: mekomsolutions/shared-github-workflow/.github/workflows/maven-publish.yml@main
@@ -28,7 +28,7 @@ jobs:
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
 
   notify-ocd3:
-    needs: release
+    needs: publish
     uses: mekomsolutions/shared-github-workflow/.github/workflows/ocd3-notify.yml@main
     secrets:
       OCD3_USERNAME: ${{ secrets.OCD3_USERNAME }}
