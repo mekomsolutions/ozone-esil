@@ -62,8 +62,87 @@
               </resources>
             </configuration>
           </execution>
+
+          <execution>
+            <!-- Exclude files from Ozone -->
+            <id>Exclude unneeded Ozone files</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/${project.artifactId}-${project.version}</outputDirectory>
+              <overwrite>true</overwrite>
+              <resources>
+                <resource>
+                  <directory>${project.build.directory}/ozone</directory>
+                  <excludes>
+                    <exclude>distro/configs/bahmniemr/</exclude>
+                    <exclude>distro/configs/senaite/</exclude>
+                    <exclude>distro/configs/orthanc/</exclude>
+                    <exclude>distro/configs/openmrs/</exclude>
+                    <exclude>distro/configs/erpnext/</exclude>
+                    <!-- Exclude some of the Odoo configs from Ozone - keep necessary settings/fields -->
+                    <exclude>distro/configs/odoo/initializer_config/account/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/act_window/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/company/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/company_property/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/country/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/currency/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/custom_fields/medication*</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/custom_fields/ir.model.fields.1000</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/custom_fields/ir.model.fields.2000</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/decimal_precision/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/field_selection/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/journal/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/language/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/partner/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/payment_term/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/pricelist/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/product_category/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/product_variant/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/stock_location/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/taxes/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/units_of_measure/</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/views/medication*</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.1000</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.2000</exclude>
+                    <exclude>distro/configs/odoo/initializer_config/warehouse/</exclude>
+                  </excludes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <!-- Disable this OpenMRS-specific plugin run -->
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+
+       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <!-- Disable this OpenMRS-specific build step -->
+            <id>prefix content packages</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+             <skip>true</skip>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
       <!-- Compile a dependency report -->
       <plugin>
         <groupId>net.mekomsolutions.maven.plugin</groupId>
