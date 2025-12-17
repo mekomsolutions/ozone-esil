@@ -1,0 +1,7 @@
+services:
+  keycloak:
+    volumes:
+      - "${KEYCLOAK_BINARIES_PATH:-keycloak-binaries}/themes:/opt/keycloak/providers"
+
+volumes:
+  keycloak-binaries: ~

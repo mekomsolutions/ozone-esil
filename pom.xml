@@ -17,6 +17,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
+    <keycloakThemeEsilVersion>1.0.0-SNAPSHOT</keycloakThemeEsilVersion>
+    <keycloakThemeEsilArtifactId>keycloak-theme-esil</keycloakThemeEsilArtifactId>
 
     <!-- Classifier for the dependency report artifact -->
     <dependencyReportClassifier>dependencies</dependencyReportClassifier>
@@ -113,6 +115,28 @@
               </resources>
             </configuration>
           </execution>
+            <execution>
+                <!-- Copy over the Docker Compose overrides file -->
+                <id>Copy docker-compose-overrides.yml</id>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                    <outputDirectory>
+                        ${project.build.directory}/${project.artifactId}-${project.version}/run/docker/
+                    </outputDirectory>
+                    <overwrite>true</overwrite>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/scripts</directory>
+                            <includes>
+                                <include>docker-compose-overrides.yml</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </configuration>
+            </execution>
         </executions>
       </plugin>
 
@@ -183,6 +207,30 @@
           </execution>
         </executions>
       </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>Copy Keycloak theme e-SIL JAR</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>copy</goal>
+                    </goals>
+                    <configuration>
+                        <artifactItems>
+                            <artifactItem>
+                                <groupId>com.ozonehis</groupId>
+                                <artifactId>${keycloakThemeEsilArtifactId}</artifactId>
+                                <version>${keycloakThemeEsilVersion}</version>
+                                <type>jar</type>
+                                <outputDirectory>${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries/keycloak/themes</outputDirectory>
+                            </artifactItem>
+                        </artifactItems>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
   </build>
 
