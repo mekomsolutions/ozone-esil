@@ -1866,6 +1866,7 @@
     "strictTransportSecurity": "max-age=31536000; includeSubDomains"
   },
   "smtpServer": {},
+  "loginTheme": "esil",
   "eventsEnabled": false,
   "eventsListeners": [
     "jboss-logging"
