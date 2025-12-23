@@ -25,7 +25,11 @@
   </properties>
 
   <dependencies>
-    <!-- TODO: Add any implementation-specific dependencies -->
+      <dependency>
+          <groupId>com.ozonehis</groupId>
+          <artifactId>keycloak-theme-esil</artifactId>
+          <version>${keycloakThemeEsilVersion}</version>
+      </dependency>
   </dependencies>
 
   <repositories>
