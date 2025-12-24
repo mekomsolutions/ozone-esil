@@ -1,4 +1,4 @@
-# Configuration Jdbc catalogs which Map to actual databases allowing direct read and write without temporary tables
+# Configuration for Jdbc catalogs which Map to actual databases allowing direct read and write without temporary tables
 jdbcCatalogs:
     # Name of the catalog
   - name: analytics
