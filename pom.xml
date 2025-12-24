@@ -114,6 +114,9 @@
                     <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.1000</exclude>
                     <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.2000</exclude>
                     <exclude>distro/configs/odoo/initializer_config/warehouse/</exclude>
+                    <!-- Exclude analytics liquibase changelog -->
+                    <exclude>distro/configs/analytics/liquibase/analytics/changelogs/0001-init.xml</exclude>
+                    <exclude>distro/configs/analytics/liquibase/analytics/changelogs/openmrs-*</exclude>
                   </excludes>
                 </resource>
               </resources>
