@@ -3,5 +3,17 @@ services:
     volumes:
       - "${KEYCLOAK_BINARIES_PATH:-keycloak-binaries}/themes:/opt/keycloak/providers"
 
+  env-substitution:
+    environment:
+      - KC_SMTP_HOST=${KC_SMTP_HOST}
+      - KC_SMTP_PORT=${KC_SMTP_PORT}
+      - KC_SMTP_FROM=${KC_SMTP_FROM}
+      - KC_SMTP_FROM_DISPLAY_NAME=${KC_SMTP_FROM_DISPLAY_NAME}
+      - KC_SMTP_TLS=${KC_SMTP_TLS}
+      - KC_SMTP_SSL=${KC_SMTP_SSL}
+      - KC_SMTP_AUTH=${KC_SMTP_AUTH}
+      - KC_SMTP_REPLY_TO=${KC_SMTP_REPLY_TO}
+      - KC_SMTP_REPLY_TO_DISPLAY_NAME=${KC_SMTP_REPLY_TO_DISPLAY_NAME}
+
 volumes:
   keycloak-binaries: ~

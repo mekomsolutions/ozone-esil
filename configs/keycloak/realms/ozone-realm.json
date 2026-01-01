@@ -1865,7 +1865,18 @@
     "xXSSProtection": "1; mode=block",
     "strictTransportSecurity": "max-age=31536000; includeSubDomains"
   },
-  "smtpServer": {},
+  "smtpServer": {
+    "replyToDisplayName": "${KC_SMTP_REPLY_TO_DISPLAY_NAME}",
+    "starttls": "${KC_SMTP_TLS}",
+    "auth": "${KC_SMTP_AUTH}",
+    "port": "${KC_SMTP_PORT}",
+    "host": "${KC_SMTP_HOST}",
+    "replyTo": "${KC_SMTP_REPLY_TO}",
+    "from": "${KC_SMTP_FROM}",
+    "fromDisplayName": "${KC_SMTP_FROM_DISPLAY_NAME}",
+    "envelopeFrom": "",
+    "ssl": "${KC_SMTP_SSL}"
+  },
   "loginTheme": "esil",
   "eventsEnabled": false,
   "eventsListeners": [
