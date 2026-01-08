@@ -117,7 +117,15 @@
                     <!-- Exclude analytics liquibase changelog -->
                     <exclude>distro/configs/analytics/liquibase/analytics/changelogs/0001-init.xml</exclude>
                     <exclude>distro/configs/analytics/liquibase/analytics/changelogs/openmrs-*</exclude>
+                    <!-- Exclude all files in analytics/dsl/flattening/queries -->
+                    <exclude>distro/configs/analytics/dsl/flattening/queries/**</exclude>
                   </excludes>
+                </resource>
+                <resource>
+                  <directory>${project.build.directory}/ozone</directory>
+                  <includes>
+                    <include>distro/configs/analytics/dsl/flattening/queries/sale_order_lines.sql</include>
+                  </includes>
                 </resource>
               </resources>
             </configuration>
