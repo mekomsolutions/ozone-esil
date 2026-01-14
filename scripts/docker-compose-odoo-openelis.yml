@@ -17,7 +17,7 @@ services:
       fhir.openelis.org:
         condition: service_started
     volumes:
-      - "${EIP_ODOO_OPENELIS_ROUTES_PATH}:/eip-client/routes"
+      - "${DISTRO_PATH}/binaries/eip-odoo-openelis:/eip-client/routes"
     networks:
       web:
       ozone:
