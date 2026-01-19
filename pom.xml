@@ -19,8 +19,6 @@
     <maven.compiler.target>8</maven.compiler.target>
     <keycloakThemeEsilVersion>1.0.0-SNAPSHOT</keycloakThemeEsilVersion>
     <keycloakThemeEsilArtifactId>keycloak-theme-esil</keycloakThemeEsilArtifactId>
-    <eipOdooOpenElisArtifactId>eip-odoo-openelis</eipOdooOpenElisArtifactId>
-    <eipOdooOpenElisVersion>1.0.0-SNAPSHOT</eipOdooOpenElisVersion>
 
     <!-- Classifier for the dependency report artifact -->
     <dependencyReportClassifier>dependencies</dependencyReportClassifier>
@@ -31,12 +29,6 @@
           <groupId>com.ozonehis</groupId>
           <artifactId>keycloak-theme-esil</artifactId>
           <version>${keycloakThemeEsilVersion}</version>
-      </dependency>
-      <dependency>
-          <groupId>com.ozonehis</groupId>
-          <artifactId>${eipOdooOpenElisArtifactId}</artifactId>
-          <version>${eipOdooOpenElisVersion}</version>
-          <type>jar</type>
       </dependency>
   </dependencies>
 
@@ -160,28 +152,6 @@
                     </resources>
                 </configuration>
             </execution>
-          <execution>
-            <!-- Copy over the EIP Odoo OpenELID docker Compose overrides file -->
-            <id>Copy docker-compose-eip-odoo-openelis.yml</id>
-            <phase>process-resources</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>
-                ${project.build.directory}/${project.artifactId}-${project.version}/run/docker/
-              </outputDirectory>
-              <overwrite>true</overwrite>
-              <resources>
-                <resource>
-                  <directory>${project.basedir}/scripts</directory>
-                  <includes>
-                    <include>docker-compose-eip-odoo-openelis.yml</include>
-                  </includes>
-                </resource>
-              </resources>
-            </configuration>
-            </execution>  
         </executions>
       </plugin>
 
@@ -270,26 +240,6 @@
                                 <version>${keycloakThemeEsilVersion}</version>
                                 <type>jar</type>
                                 <outputDirectory>${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries/keycloak/themes</outputDirectory>
-                            </artifactItem>
-                        </artifactItems>
-                    </configuration>
-                </execution>
-                <execution>
-                    <id>Copy EIP Odoo OpenELIS JAR</id>
-                    <phase>prepare-package</phase>
-                    <goals>
-                        <goal>copy</goal>
-                    </goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                                <groupId>com.ozonehis</groupId>
-                                <artifactId>${eipOdooOpenElisArtifactId}</artifactId>
-                                <version>${eipOdooOpenElisVersion}</version>
-                                <type>jar</type>
-                                <overWrite>true</overWrite>
-                                <outputDirectory>
-                                    ${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries/${eipOdooOpenElisArtifactId}</outputDirectory>
                             </artifactItem>
                         </artifactItems>
                     </configuration>
