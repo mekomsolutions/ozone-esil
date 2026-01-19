@@ -3,5 +3,12 @@ services:
     volumes:
       - "${KEYCLOAK_BINARIES_PATH:-keycloak-binaries}/themes:/opt/keycloak/providers"
 
+  env-substitution:
+    environment:
+      - OPENELIS_HOSTNAME_1=${OPENELIS_HOSTNAME_1}
+      - OPENELIS_HOSTNAME_2=${OPENELIS_HOSTNAME_2}
+      - OPENELIS_PUBLIC_URL_1=${OPENELIS_PUBLIC_URL_1}
+      - OPENELIS_PUBLIC_URL_2=${OPENELIS_PUBLIC_URL_2}
+
 volumes:
   keycloak-binaries: ~
