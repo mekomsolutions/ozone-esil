@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "username": "jdoe",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "jdoe@example.com",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password",
+          "temporary": false
+        }
+      ],
+      "attributes": {
+        "gender": "M",
+        "provider": "true"
+      },
+      "requiredActions": [],
+      "realmRoles": [
+        "default-roles-ozone"
+      ],
+      "clientRoles": {
+        "openelis": [
+          "oeg-Global Administrator",
+          "oeg-Pathologist",
+          "oeg-User Account Administrator",
+          "oeg-Audit Trail",
+          "oeg-Analyser Import",
+          "oeg-Cytopathologist",
+          "oeg-Results-AllLabUnits",
+          "oeg-Validation-AllLabUnits",
+          "oeg-Reports-AllLabUnits",
+          "oeg-Reception-AllLabUnits"
+        ],
+        "openelis-1": [
+          "oeg-Global Administrator",
+          "oeg-Pathologist",
+          "oeg-User Account Administrator",
+          "oeg-Audit Trail",
+          "oeg-Analyser Import",
+          "oeg-Cytopathologist",
+          "oeg-Results-AllLabUnits",
+          "oeg-Validation-AllLabUnits",
+          "oeg-Reports-AllLabUnits",
+          "oeg-Reception-AllLabUnits"
+        ],
+        "openelis-2": [
+          "oeg-Global Administrator",
+          "oeg-Pathologist",
+          "oeg-User Account Administrator",
+          "oeg-Audit Trail",
+          "oeg-Analyser Import",
+          "oeg-Cytopathologist",
+          "oeg-Results-AllLabUnits",
+          "oeg-Validation-AllLabUnits",
+          "oeg-Reports-AllLabUnits",
+          "oeg-Reception-AllLabUnits"
+        ],
+        "odoo": [
+          "Administration / Settings",
+          "Sales / Administrator",
+          "Inventory / Administrator",
+          "Purchase / Administrator"
+        ],
+        "superset": [
+          "Admin"
+        ]
+      },
+      "notBefore": 0,
+      "groups": []
+    }
+  ]
+}
