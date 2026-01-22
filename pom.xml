@@ -130,6 +130,27 @@
               </resources>
             </configuration>
           </execution>
+          <execution>
+              <!-- Override with local binaries files-->
+              <id>Copy local resources</id>
+              <phase>process-resources</phase>
+              <goals>
+                  <goal>copy-resources</goal>
+              </goals>
+              <configuration>
+                  <outputDirectory>
+                      ${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries</outputDirectory>
+                  <overwrite>true</overwrite>
+                  <resources>
+                      <resource>
+                          <directory>${project.basedir}/binaries</directory>
+                          <excludes>
+                              <exclude>.gitkeep</exclude>
+                          </excludes>
+                      </resource>
+                  </resources>
+              </configuration>
+          </execution>
             <execution>
                 <!-- Copy over the Docker Compose overrides file -->
                 <id>Copy docker-compose-overrides.yml</id>
@@ -152,6 +173,7 @@
                     </resources>
                 </configuration>
             </execution>
+
         </executions>
       </plugin>
 
