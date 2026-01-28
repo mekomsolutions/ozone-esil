@@ -95,11 +95,7 @@
                     <exclude>distro/configs/odoo/initializer_config/company_property/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/country/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/currency/</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/custom_fields/medication*</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/custom_fields/ir.model.fields.1000</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/custom_fields/ir.model.fields.2000</exclude>
                     <exclude>distro/configs/odoo/initializer_config/decimal_precision/</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/field_selection/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/journal/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/language/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/partner/</exclude>
@@ -110,9 +106,6 @@
                     <exclude>distro/configs/odoo/initializer_config/stock_location/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/taxes/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/units_of_measure/</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/views/medication*</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.1000</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.2000</exclude>
                     <exclude>distro/configs/odoo/initializer_config/warehouse/</exclude>
                     <!-- Exclude analytics liquibase changelog -->
                     <exclude>distro/configs/analytics/liquibase/analytics/changelogs/0001-init.xml</exclude>
