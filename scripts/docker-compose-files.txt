@@ -3,5 +3,5 @@ docker-compose-keycloak.yml
 docker-compose-odoo.yml
 docker-compose-odoo-sso.yml
 docker-compose-openelis.yml
-docker-compose-overrides.yml
 docker-compose-eip-odoo-openelis.yml
+docker-compose-overrides.yml
