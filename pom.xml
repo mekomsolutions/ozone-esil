@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.ozonehis</groupId>
     <artifactId>maven-parent</artifactId>
-    <version>1.0.0-dev-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <groupId>com.ozonehis</groupId>
@@ -95,11 +95,7 @@
                     <exclude>distro/configs/odoo/initializer_config/company_property/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/country/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/currency/</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/custom_fields/medication*</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/custom_fields/ir.model.fields.1000</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/custom_fields/ir.model.fields.2000</exclude>
                     <exclude>distro/configs/odoo/initializer_config/decimal_precision/</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/field_selection/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/journal/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/language/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/partner/</exclude>
@@ -110,17 +106,43 @@
                     <exclude>distro/configs/odoo/initializer_config/stock_location/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/taxes/</exclude>
                     <exclude>distro/configs/odoo/initializer_config/units_of_measure/</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/views/medication*</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.1000</exclude>
-                    <exclude>distro/configs/odoo/initializer_config/views/ir.ui.view.2000</exclude>
                     <exclude>distro/configs/odoo/initializer_config/warehouse/</exclude>
                     <!-- Exclude analytics liquibase changelog -->
                     <exclude>distro/configs/analytics/liquibase/analytics/changelogs/0001-init.xml</exclude>
                     <exclude>distro/configs/analytics/liquibase/analytics/changelogs/openmrs-*</exclude>
+                    <!-- Exclude all files in analytics/dsl/flattening/queries -->
+                    <exclude>distro/configs/analytics/dsl/flattening/queries/**</exclude>
                   </excludes>
+                </resource>
+                <resource>
+                  <directory>${project.build.directory}/ozone</directory>
+                  <includes>
+                    <include>distro/configs/analytics/dsl/flattening/queries/sale_order_lines.sql</include>
+                  </includes>
                 </resource>
               </resources>
             </configuration>
+          </execution>
+          <execution>
+              <!-- Override with local binaries files-->
+              <id>Copy local resources</id>
+              <phase>process-resources</phase>
+              <goals>
+                  <goal>copy-resources</goal>
+              </goals>
+              <configuration>
+                  <outputDirectory>
+                      ${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries</outputDirectory>
+                  <overwrite>true</overwrite>
+                  <resources>
+                      <resource>
+                          <directory>${project.basedir}/binaries</directory>
+                          <excludes>
+                              <exclude>.gitkeep</exclude>
+                          </excludes>
+                      </resource>
+                  </resources>
+              </configuration>
           </execution>
             <execution>
                 <!-- Copy over the Docker Compose overrides file -->
@@ -144,6 +166,7 @@
                     </resources>
                 </configuration>
             </execution>
+
         </executions>
       </plugin>
 
