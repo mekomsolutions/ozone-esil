@@ -16,5 +16,17 @@ services:
       - "${OPENELIS_CONFIG_PATH}/menu/menu_config.json:/var/lib/openelis-global/menu/menu_config.json"
       - "${OPENELIS_LUCENE_INDEX:-lucene_index-vol}:/var/lib/lucene_index"
 
+  env-substitution:
+    environment:
+      - KC_SMTP_HOST=${KC_SMTP_HOST}
+      - KC_SMTP_PORT=${KC_SMTP_PORT}
+      - KC_SMTP_FROM=${KC_SMTP_FROM}
+      - KC_SMTP_FROM_DISPLAY_NAME=${KC_SMTP_FROM_DISPLAY_NAME}
+      - KC_SMTP_TLS=${KC_SMTP_TLS}
+      - KC_SMTP_SSL=${KC_SMTP_SSL}
+      - KC_SMTP_AUTH=${KC_SMTP_AUTH}
+      - KC_SMTP_REPLY_TO=${KC_SMTP_REPLY_TO}
+      - KC_SMTP_REPLY_TO_DISPLAY_NAME=${KC_SMTP_REPLY_TO_DISPLAY_NAME}
+
 volumes:
   keycloak-binaries: ~
