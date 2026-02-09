@@ -125,7 +125,7 @@
           </execution>
           <execution>
               <!-- Override with local binaries files-->
-              <id>Copy local resources</id>
+              <id>Copy local binaries resources</id>
               <phase>process-resources</phase>
               <goals>
                   <goal>copy-resources</goal>
@@ -165,6 +165,27 @@
                 </resources>
              </configuration>
           </execution>
+            <execution>
+                <!-- Override with local configs files-->
+                <id>Copy local configs resources</id>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                    <outputDirectory>
+                        ${project.build.directory}/${project.artifactId}-${project.version}/distro/configs</outputDirectory>
+                    <overwrite>true</overwrite>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/configs</directory>
+                            <excludes>
+                                <exclude>.gitkeep</exclude>
+                            </excludes>
+                        </resource>
+                    </resources>
+                </configuration>
+            </execution>
             <execution>
                 <!-- Copy over the Docker Compose overrides file -->
                 <id>Copy docker-compose-overrides.yml</id>
