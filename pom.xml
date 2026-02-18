@@ -167,7 +167,7 @@
           </execution>
           <execution>
               <!-- Copy over the Docker Compose overrides file -->
-              <id>Copy docker-compose-overrides.yml</id>
+              <id>Copy Docker Compose overrides</id>
               <phase>process-resources</phase>
               <goals>
                   <goal>copy-resources</goal>
@@ -181,7 +181,8 @@
                       <resource>
                           <directory>${project.basedir}/scripts</directory>
                           <includes>
-                              <include>docker-compose-overrides.yml</include>
+                              <include>docker-compose-keycloak-override.yml</include>
+                              <include>docker-compose-openelis-override.yml</include>
                           </includes>
                       </resource>
                   </resources>

@@ -1,0 +1,21 @@
+services:
+  env-substitution:
+    environment:
+      - OPENELIS_PUBLIC_URL_1=${OPENELIS_PUBLIC_URL_1}
+      - OPENELIS_HOSTNAME_1=${OPENELIS_HOSTNAME_1}
+      - OPENELIS_PUBLIC_URL_2=${OPENELIS_PUBLIC_URL_2}
+      - OPENELIS_HOSTNAME_2=${OPENELIS_HOSTNAME_2}
+      - KEYCLOAK_PUBLIC_URL=${SERVER_SCHEME}://${KEYCLOAK_HOSTNAME}
+
+  oe.openelis.org:
+    volumes:
+      - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
+      - "${OPENELIS_CONFIG_PATH}/plugins/:/var/lib/openelis-global/plugins"
+      - "${OPENELIS_CONFIG_PATH}/properties/SystemConfiguration.properties:/var/lib/openelis-global/properties/SystemConfiguration.properties"
+      - "${OPENELIS_CONFIG_PATH}/analyzer/analyzer-test-map.csv:/var/lib/openelis-global/analyzer/analyzer-test-map.csv"
+      - "${OPENELIS_CONFIG_PATH}/odoo/odoo-test-product-mapping.csv:/var/lib/openelis-global/odoo/odoo-test-product-mapping.csv"
+      - "${OPENELIS_CONFIG_PATH}/ocl:/var/lib/openelis-global/ocl"
+      - "${OPENELIS_CONFIG_PATH}/programs/:/var/lib/openelis-global/programs"
+      - "${OPENELIS_CONFIG_PATH}/configuration:/var/lib/openelis-global/configuration"
+      - "${OPENELIS_CONFIG_PATH}/menu/menu_config.json:/var/lib/openelis-global/menu/menu_config.json"
+      - "${OPENELIS_LUCENE_INDEX:-lucene_index-vol}:/var/lib/lucene_index"
