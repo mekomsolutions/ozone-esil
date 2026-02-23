@@ -193,7 +193,7 @@
           </execution>
           <execution>
             <!-- Copy over the Madagascar distro files to the final package -->
-            <id>Copy Madagascar distro files to the final package</id>
+            <id>Copy OEG Madagascar distro files to the final package</id>
             <phase>process-resources</phase>
             <goals>
               <goal>copy-resources</goal>
@@ -215,7 +215,7 @@
           </execution>
           <execution>
             <!-- Copy override common.properties file to the Madagascar distro config directory in the final package -->
-            <id>Copy override common.properties file to the Madagascar distro config directory</id>
+            <id>Copy override common.properties file to the OEG Madagascar distro config directory</id>
             <phase>process-resources</phase>
             <goals>
               <goal>copy-resources</goal>
@@ -264,7 +264,7 @@
           </execution>
             <!-- Download the Madagascar distro zip from GitHub -->
           <execution>
-            <id>download Magadascar distro zip</id>
+            <id>download OEG Magadascar distro zip</id>
             <phase>generate-resources</phase>
             <goals>
               <goal>exec</goal>
@@ -282,7 +282,7 @@
 
           <!-- Extract the Madagascar distro zip into the build directory -->
           <execution>
-            <id>extract Magadascar distro files</id>
+            <id>extract OEG Magadascar distro files</id>
             <phase>generate-resources</phase>
             <goals>
               <goal>exec</goal>
