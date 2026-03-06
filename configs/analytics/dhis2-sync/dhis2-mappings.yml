@@ -1,0 +1,22 @@
+reports:
+  - id: hiv-testing-facility-a
+    name: HIV Testing Results - Facility A
+    description: HIV testing indicators aggregated from patient-level events for Facility A
+    dataSet: GqKaojXhPdg
+    sqlFile: queries/hiv-testing-facility-a.sql
+
+    groupBy:
+      dataSet: data_set
+      period: period
+      orgUnit: ImspTQPwCqd
+
+    dataValueMappings:
+      - name: HIV - HTS - HIV test performed
+        dataElement: Aog9SRWtjvv
+        valueColumn: tests_performed
+        categoryOptionCombo: HllvX50cXC0
+
+      - name: HIV - HTS - HIV positive test result
+        dataElement: o4RQy5hlIXa
+        valueColumn: tests_positive
+        categoryOptionCombo: HllvX50cXC0
