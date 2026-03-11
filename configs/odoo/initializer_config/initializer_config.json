@@ -1,0 +1,9 @@
+{
+  "models": [
+    {
+      "model_name": "res.company",
+      "folder": "company",
+      "field_rules": {}
+    }
+  ]
+}
