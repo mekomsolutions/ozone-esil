@@ -1,6 +1,11 @@
 {
   "models": [
     {
+      "model_name": "res.partner",
+      "folder": "partner",
+      "field_rules": {}
+    },
+    {
       "model_name": "res.company",
       "folder": "company",
       "field_rules": {}
