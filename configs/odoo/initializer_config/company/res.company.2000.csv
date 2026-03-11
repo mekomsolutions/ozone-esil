@@ -1,6 +1,4 @@
 "id","name","sequence","parent_id/id","partner_id/id"
-"base.main_company","LA2M",10,,"base.main_partner"
-"esil.company_chujr","CHUJR",10,,"esil.partner_chujr"
 "esil.company_central","Central",10,"base.main_company","esil.partner_central"
 "esil.company_nosy_be","Nosy Be",11,"base.main_company","esil.partner_nosy_be"
 "esil.company_diego","Diego",12,"base.main_company","esil.partner_diego"

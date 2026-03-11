@@ -1,0 +1,3 @@
+"id","name","sequence","parent_id/id","partner_id/id"
+"base.main_company","LA2M",10,,"base.main_partner"
+"esil.company_chujr","CHUJR",10,,"esil.partner_chujr"
