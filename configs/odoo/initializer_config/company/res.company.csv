@@ -1,12 +1,12 @@
 "id","name","sequence","parent_id/id"
-"esil.company_la2m","LA2M",10,
+"base.main_company","LA2M",10,
 "esil.company_chujr","CHUJR",10,
-"esil.company_central","Central",10,"esil.company_la2m"
-"esil.company_nosy_be","Nosy Be",11,"esil.company_la2m"
-"esil.company_diego","Diego",12,"esil.company_la2m"
-"esil.company_mahajanga","Mahajanga",13,"esil.company_la2m"
-"esil.company_toamasina","Toamasina",14,"esil.company_la2m"
-"esil.company_fianarantsoa","Fianarantsoa",15,"esil.company_la2m"
-"esil.company_toliara","Toliara",16,"esil.company_la2m"
+"esil.company_central","Central",10,"base.main_company"
+"esil.company_nosy_be","Nosy Be",11,"base.main_company"
+"esil.company_diego","Diego",12,"base.main_company"
+"esil.company_mahajanga","Mahajanga",13,"base.main_company"
+"esil.company_toamasina","Toamasina",14,"base.main_company"
+"esil.company_fianarantsoa","Fianarantsoa",15,"base.main_company"
+"esil.company_toliara","Toliara",16,"base.main_company"
 "esil.company_hjra","HJRA",17,"esil.company_chujr"
 "esil.company_hjrb","HJRB",18,"esil.company_chujr"
