@@ -9,6 +9,11 @@
       "model_name": "res.company",
       "folder": "company",
       "field_rules": {}
+    },
+    {
+      "model_name": "stock.warehouse",
+      "folder": "warehouse",
+      "field_rules": {}
     }
   ]
 }
