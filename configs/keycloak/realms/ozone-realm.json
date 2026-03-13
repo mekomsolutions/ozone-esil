@@ -366,6 +366,142 @@
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
           "attributes": {}
+        },
+        {
+          "id": "c35376aa-5d88-496a-90d7-352f0b59988c",
+          "name": "Manufacturing / Administrator",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "d1df53e6-1605-4d1d-8b4c-d716c89b8960",
+          "name": "Invoicing / Billing Administrator",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "eae4a38c-8c1b-4e1e-9f07-45448e662a19",
+          "name": "Invoicing / Billing",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "6948818a-cec9-4479-87d7-62307b599037",
+          "name": "Bank / Validate bank account",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "e72eabde-bb9b-455f-99ca-85d637974f4e",
+          "name": "Administration / Access Rights",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "05b229db-a8f2-49d8-98d1-31950127b166",
+          "name": "Technical / Basic Pricelists",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "98358779-803c-452a-bdec-5c8777a2a5d2",
+          "name": "Technical / Advanced Pricelists",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "a0042b0e-28a3-451c-a9ba-2d657cfa5349",
+          "name": "Technical / Allow the cash rounding management",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "62955b7f-214d-441b-b704-534c730f5090",
+          "name": "Technical / Analytic Accounting",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "032b792b-8cb2-4d2f-a358-06e01f0a17d6",
+          "name": "User types / Internal User",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "49a2f4c6-708e-4293-a797-077e88c0420d",
+          "name": "Extra Rights / Multi Companies",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "8634abcf-5bcf-4984-b447-42efe1eab56a",
+          "name": "Extra Rights / Technical Features",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "2f116882-d140-4fcd-9e43-8d7ac49e8e9a",
+          "name": "Manufacturing / User",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "c379d581-313c-4bc3-b88a-38e8f946be89",
+          "name": "Purchase / User",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "dfb88b71-6102-4421-bc9b-79e4bd389637",
+          "name": "Dashboard / Admin",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "9ec4dcc3-2848-4c7b-8c48-2108dbd2a6e4",
+          "name": "Technical / Manage Packages",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
+          "id": "90570192-1909-4e10-9874-efc720f0a698",
+          "name": "Technical / Receive notifications in Odoo",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
         }
       ],
       "openelis": [
