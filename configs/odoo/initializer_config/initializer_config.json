@@ -9,6 +9,17 @@
       "model_name": "res.company",
       "folder": "company",
       "field_rules": {}
+    ,
+    {
+      "model_name": "ir.config_parameter",
+      "folder": "config",
+      "field_rules": {}
+    },
+    {
+      "model_name": "ir.module.module",
+      "folder": "config",
+      "field_rules": {}
+    }
     },
     {
       "model_name": "stock.warehouse",
@@ -16,15 +27,5 @@
       "field_rules": {}
     }
     ,
-    {
-      "model_name": "stock.config.settings",
-      "folder": "inventory",
-      "field_rules": {}
-    },
-    {
-      "model_name": "sale.config.settings",
-      "folder": "sales",
-      "field_rules": {}
-    }
   ]
 }
