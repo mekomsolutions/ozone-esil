@@ -15,5 +15,16 @@
       "folder": "warehouse",
       "field_rules": {}
     }
+    ,
+    {
+      "model_name": "stock.config.settings",
+      "folder": "inventory",
+      "field_rules": {}
+    },
+    {
+      "model_name": "sale.config.settings",
+      "folder": "sales",
+      "field_rules": {}
+    }
   ]
 }
