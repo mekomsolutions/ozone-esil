@@ -27,5 +27,11 @@
       "field_rules": {}
     }
     ,
+    {
+      "model_name": "stock.location",
+      "folder": "warehouse",
+      "field_rules": {}
+    }
+    
   ]
 }
