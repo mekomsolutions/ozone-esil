@@ -1,4 +1,4 @@
-"id","name","usage","company_id/id","location_id/id"
+"id","name","usage","company_id/id","parent_id/id"
 "esil.loc_chujr","Stock CHUJR","internal","esil.company_chujr",""
 "esil.loc_central_a","Conteneur A","internal","esil.company_central","export.stock_location_144_64e56efe"
 "esil.loc_central_b","Conteneur B","internal","esil.company_central","export.stock_location_144_64e56efe"
