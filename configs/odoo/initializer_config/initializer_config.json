@@ -9,26 +9,6 @@
       "model_name": "res.company",
       "folder": "company",
       "field_rules": {}
-    },
-    {
-      "model_name": "ir.config_parameter",
-      "folder": "config",
-      "field_rules": {}
-    },
-    {
-      "model_name": "ir.module.module",
-      "folder": "config",
-      "field_rules": {}
-    },
-    {
-      "model_name": "stock.warehouse",
-      "folder": "warehouse",
-      "field_rules": {}
-    },
-    {
-      "model_name": "stock.location",
-      "folder": "warehouse",
-      "field_rules": {}
     }
   ]
 }
