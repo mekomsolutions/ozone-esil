@@ -1,0 +1,21 @@
+services:
+  oe-analyzer-bridge:
+    image: itechuw/openelis-analyzer-bridge:develop
+    platform: linux/amd64
+    ports:
+      - "${OE_ANALYZER_BRIDGE_PORT:-8442}:8443" # HTTPS API port
+      - "${OE_ASTM_ANALYZER_BRIDGE_PORT:-12000}:12001" # ASTM listen port
+    volumes:
+      - "${OPENELIS_CONFIG_PATH}/astm/configuration.yml:/app/configuration.yml:ro"
+      - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
+    environment:
+      SPRING_PROFILE: dev
+      LOGGING_LEVEL_ORG_ITECH: TRACE
+      JAVA_OPTS: |
+        -Djavax.net.ssl.trustStore=${SSL_TRUSTSTORE_PATH} 
+        -Djavax.net.ssl.trustStorePassword=${SSL_TRUSTSTORE_PASSWORD}
+        -Djavax.net.ssl.trustStoreType=pkcs12
+    networks:
+      - ozone
+      - web
+    restart: unless-stopped

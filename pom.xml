@@ -22,8 +22,8 @@
     <eipAnalyticsDhis2Version>1.0.0-SNAPSHOT</eipAnalyticsDhis2Version>
 
     <!-- Madagascar distro version and artifactId -->
-    <magadascarDistroVersion>3.2.1.3</magadascarDistroVersion>
-    <magadascarDistroArtifactId>openelis-magadascar-distro</magadascarDistroArtifactId>
+    <madagascarDistroVersion>main</madagascarDistroVersion>
+    <madagascarDistroArtifactId>openelis-madagascar-distro</madagascarDistroArtifactId>
 
     <!-- Classifier for the dependency report artifact -->
     <dependencyReportClassifier>dependencies</dependencyReportClassifier>
@@ -192,6 +192,7 @@
                           <includes>
                               <include>docker-compose-keycloak-override.yml</include>
                               <include>docker-compose-openelis-override.yml</include>
+                              <include>docker-compose-openelis-analyzer-bridge.yml</include>
                           </includes>
                       </resource>
                   </resources>
@@ -211,7 +212,7 @@
               <overwrite>true</overwrite>
               <resources>
                 <resource>
-                  <directory>${project.build.directory}/${magadascarDistroArtifactId}-${magadascarDistroVersion}</directory>
+                  <directory>${project.build.directory}/${madagascarDistroArtifactId}-${madagascarDistroVersion}</directory>
                   <includes>
                     <include>configs/**</include>
                   </includes>
@@ -241,6 +242,28 @@
               </resources>
             </configuration>
           </execution>
+            <execution>
+                <!-- Copy ASTM configuration file into the final package -->
+                <id>Copy ASTM configuration file into the final package</id>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                    <outputDirectory>
+                        ${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries/openelis/configs/astm/
+                    </outputDirectory>
+                    <overwrite>true</overwrite>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/configs/openelis/astm</directory>
+                            <includes>
+                                <include>configuration.yml</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </configuration>
+            </execution>
         </executions>
       </plugin>
 
@@ -268,38 +291,23 @@
              <skip>true</skip>
             </configuration>
           </execution>
-            <!-- Download the Madagascar distro zip from GitHub -->
+            <!-- Clone the Madagascar distro source from GitHub (configs only) -->
           <execution>
-            <id>download OEG Magadascar distro zip</id>
+            <id>clone OEG Madagascar distro source</id>
             <phase>generate-resources</phase>
             <goals>
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>curl</executable>
+              <executable>git</executable>
               <arguments>
-                <argument>-L</argument>
-                <argument>-o</argument>
-                <argument>${project.build.directory}/${magadascarDistroArtifactId}-${magadascarDistroVersion}.zip</argument>
-                <argument>https://github.com/DIGI-UW/${magadascarDistroArtifactId}/archive/refs/tags/${magadascarDistroVersion}.zip</argument>
-              </arguments>
-            </configuration>
-          </execution>
-
-          <!-- Extract the Madagascar distro zip into the build directory -->
-          <execution>
-            <id>extract OEG Magadascar distro files</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>sh</executable>
-              <arguments>
-                <argument>-c</argument>
-                <argument>
-                    unzip -o ${project.build.directory}/${magadascarDistroArtifactId}-${magadascarDistroVersion}.zip -d ${project.build.directory}
-                </argument>
+                <argument>clone</argument>
+                <argument>--depth</argument>
+                <argument>1</argument>
+                <argument>--branch</argument>
+                <argument>${madagascarDistroVersion}</argument>
+                <argument>https://github.com/DIGI-UW/${madagascarDistroArtifactId}.git</argument>
+                <argument>${project.build.directory}/${madagascarDistroArtifactId}-${madagascarDistroVersion}</argument>
               </arguments>
             </configuration>
           </execution>
