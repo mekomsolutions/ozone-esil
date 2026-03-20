@@ -9,10 +9,10 @@ org:
       #   hostName: astm-http-bridge2
       #   port: 12001
       forward-http-server:
-        uri: ${OPENELIS_FOWARD_HTTP_SERVER_URI:-https://oe.openelis.org:8443/api/OpenELIS-Global/analyzer/astm}
-        username: ${OPENELIS_DEFAULT_USERNAME:-admin}
-        password: ${OPENELIS_DEFAULT_PASSWORD:-adminADMIN!}
-        healthUri: ${OPENELIS_FOWARD_HTTP_SERVER_HEALTH_URI:-https://oe.openelis.org:8443/api/OpenELIS-Global/health}
+        uri: ${OPENELIS_FOWARD_HTTP_SERVER_URI:https://oe.openelis.org:8443/api/OpenELIS-Global/analyzer/astm}
+        username: ${OPENELIS_DEFAULT_USERNAME:admin}
+        password: ${OPENELIS_DEFAULT_PASSWORD:adminADMIN!}
+        healthUri: ${OPENELIS_FOWARD_HTTP_SERVER_HEALTH_URI:https://oe.openelis.org:8443/api/OpenELIS-Global/health}
         healthMethod: GET
 management:
   health:
@@ -20,7 +20,7 @@ management:
       enabled: true
 
 openelis:
-  url: ${OPENELIS_URL:-https://oe.openelis.org:8443/api/OpenELIS-Global/analyzer/astm}
+  url: ${OPENELIS_URL:https://oe.openelis.org:8443/api/OpenELIS-Global/analyzer/astm}
   timeout: 30000
   ssl:
     verify: false  # Development only - uses self-signed certs
