@@ -10,6 +10,6 @@ JOIN (
 ) p ON dr.patient_id = p.id
 WHERE obs.obs_date >= DATE_TRUNC('month', CAST(:#lastSyncTimestamp AS TIMESTAMP))
   AND dr.code_display = 'HIV rapid test HIV'
-  AND dr.facility_name = 'f5a738b0-b85d-4c1a-bc29-21f097c4fc36'
+  AND dr.facility_name = '9ce55821-f342-4b1c-bf47-7d07f7417773'
 GROUP BY TO_CHAR(CAST(obs.obs_date AS TIMESTAMP), 'YYYYMM')
 ORDER BY period
