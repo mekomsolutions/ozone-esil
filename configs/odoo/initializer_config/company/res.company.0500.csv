@@ -1,2 +1,2 @@
-"id","name","sequence"
-"base.main_company","LA2M",10
+"id","name","sequence","currency_id/id"
+"base.main_company","LA2M",10,"base.MGA"
