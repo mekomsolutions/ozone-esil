@@ -200,7 +200,7 @@
           <execution>
             <!-- Copy over the Madagascar distro files to the final package -->
             <id>Copy OEG Madagascar distro files to the final package</id>
-            <phase>prepare-package</phase>
+            <phase>process-resources</phase>
             <goals>
               <goal>copy-resources</goal>
             </goals>
