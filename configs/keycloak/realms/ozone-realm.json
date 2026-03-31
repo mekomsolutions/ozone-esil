@@ -1645,8 +1645,8 @@
         "saml.onetimeuse.condition": "false",
         "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
         "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
-        "saml_single_logout_service_url_post": "http://${OPENELIS_HOSTNAME}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
-        "saml_single_logout_service_url_redirect": "http://${OPENELIS_HOSTNAME}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
+        "saml_single_logout_service_url_post": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
+        "saml_single_logout_service_url_redirect": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
       },
       "authenticationFlowBindingOverrides": {},
       "fullScopeAllowed": true,
@@ -1705,8 +1705,8 @@
         "saml.onetimeuse.condition": "false",
         "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
         "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
-        "saml_single_logout_service_url_post": "http://${OPENELIS_HOSTNAME_1}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
-        "saml_single_logout_service_url_redirect": "http://${OPENELIS_HOSTNAME_1}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
+        "saml_single_logout_service_url_post": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME_1}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
+        "saml_single_logout_service_url_redirect": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME_1}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
       },
       "authenticationFlowBindingOverrides": {},
       "fullScopeAllowed": true,
@@ -1765,8 +1765,8 @@
         "saml.onetimeuse.condition": "false",
         "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
         "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
-        "saml_single_logout_service_url_post": "http://${OPENELIS_HOSTNAME_2}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
-        "saml_single_logout_service_url_redirect": "http://${OPENELIS_HOSTNAME_2}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
+        "saml_single_logout_service_url_post": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME_2}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
+        "saml_single_logout_service_url_redirect": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME_2}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
       },
       "authenticationFlowBindingOverrides": {},
       "fullScopeAllowed": true,
