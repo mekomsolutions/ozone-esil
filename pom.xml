@@ -22,7 +22,7 @@
     <eipAnalyticsDhis2Version>1.0.0-SNAPSHOT</eipAnalyticsDhis2Version>
 
     <!-- Madagascar distro version and artifactId -->
-    <madagascarDistroVersion>3.2.1.3</madagascarDistroVersion>
+    <madagascarDistroVersion>3.2.1.4</madagascarDistroVersion>
     <madagascarDistroArtifactId>openelis-madagascar-distro</madagascarDistroArtifactId>
 
     <!-- Classifier for the dependency report artifact -->
@@ -192,6 +192,7 @@
                           <includes>
                               <include>docker-compose-keycloak-override.yml</include>
                               <include>docker-compose-openelis-override.yml</include>
+                              <include>docker-compose-openelis-analyzer-bridge.yml</include>
                           </includes>
                       </resource>
                   </resources>
@@ -241,6 +242,28 @@
               </resources>
             </configuration>
           </execution>
+            <execution>
+                <!-- Copy ASTM configuration file into the final package -->
+                <id>Copy ASTM configuration file into the final package</id>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                    <outputDirectory>
+                        ${project.build.directory}/${project.artifactId}-${project.version}/distro/binaries/openelis/configs/astm/
+                    </outputDirectory>
+                    <overwrite>true</overwrite>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/configs/openelis/astm</directory>
+                            <includes>
+                                <include>configuration.yml</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </configuration>
+            </execution>
         </executions>
       </plugin>
 
