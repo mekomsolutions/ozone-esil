@@ -1,4 +1,4 @@
-External ID,Name,Product Type,x_concept_code,x_concept_source
+id,Name,Product Type,x_concept_code,x_concept_source
 init.product_asp_biochimie,A.S.P._Biochimie,Service,20570-8,LOINC
 init.product_5_nucleotidase,5° Nucleotidase,Service,718-7,LOINC
 init.product_acide_urique,Acide urique,Service,6690-2,LOINC
