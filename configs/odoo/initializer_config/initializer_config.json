@@ -27,7 +27,7 @@
     },
     {
       "model_name":"product.template",
-      "folder":"product_template ",
+      "folder":"product_template",
       "field_rules": {}
     }
   ]
