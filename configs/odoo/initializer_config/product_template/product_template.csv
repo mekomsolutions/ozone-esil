@@ -1,0 +1,147 @@
+External ID,Name,Product Type,x_concept_code,x_concept_source
+init.product_asp_biochimie,A.S.P._Biochimie,Service,20570-8,LOINC
+init.product_5_nucleotidase,5° Nucleotidase,Service,718-7,LOINC
+init.product_acide_urique,Acide urique,Service,6690-2,LOINC
+init.product_acide_urique_autres_liquides,Acide urique (Autres liquides de ponction),Service,777-3,LOINC
+init.product_acide_urique_urinaire,Acide urique urinaire,Service,58410-2,LOINC
+init.product_alat,ALAT,Service,718-7,LOINC
+init.product_albumine,Albumine,Service,20570-8,LOINC
+init.product_albumine_autres_liquides,Albumine (Autres liquides de ponction),Service,6690-2,LOINC
+init.product_afp,Alpha-Foeto-Protéine (AFP),Service,777-3,LOINC
+init.product_ammoniemie,Ammoniémie,Service,58410-2,LOINC
+init.product_amylase,Amylase,Service,718-7,LOINC
+init.product_amylase_autres_liquides,Amylase (Autres liquides de ponction),Service,20570-8,LOINC
+init.product_amylase_urinaire,Amylase urinaire,Service,6690-2,LOINC
+init.product_ca153,Antigen Carbohydrate  CA 15.3,Service,777-3,LOINC
+init.product_ca125,Antigen Carbohydrate Ca 125 II,Service,58410-2,LOINC
+init.product_ca199,Antigen Carbohydrate CA 19.9,Service,718-7,LOINC
+init.product_cea,Antigène Carcino-Embryonnaire (CEA ou ACE),Service,20570-8,LOINC
+init.product_fpsa,Antigéne libre specifique de la prostate (FPSA),Service,6690-2,LOINC
+init.product_tpsa,Antigène total spécifique de la prostate (TPSA),Service,777-3,LOINC
+init.product_apo_a1b,Apo lipoprotéines A1/B,Service,58410-2,LOINC
+init.product_asat,ASAT,Service,718-7,LOINC
+init.product_aspect_plasma_serum,Aspect plasma/sérum,Service,20570-8,LOINC
+init.product_b2_microglobuline_urinaire,Béta - 2 - Microglobuline urinaire,Service,6690-2,LOINC
+init.product_b2mg,Béta-2-Microglobuline (B2MG),Service,777-3,LOINC
+init.product_bicarbonates_dialysat,Bicarbonates (Dialysat),Service,58410-2,LOINC
+init.product_bicarbonates_apres_dialyse,Bicarbonates (HCO3)  après dialyse_14#,Service,718-7,LOINC
+init.product_bicarbonates_avant_dialyse,Bicarbonates (HCO3)  avant dialyse_14#,Service,20570-8,LOINC
+init.product_bicarbonates_std,Bicarbonates standards (HCO3std),Service,6690-2,LOINC
+init.product_bilan_thyroidien,Bilan thyroidien(TSH+FT4+FT3),Service,777-3,LOINC
+init.product_bilirubine_conjuguee,Bilirubine Conjuguée,Service,58410-2,LOINC
+init.product_bilirubine_totale,Bilirubine Totale,Service,718-7,LOINC
+init.product_bilirubinemie,Bilirubinémie.,Service,20570-8,LOINC
+init.product_calcium_autres_liquides,Calcium (Autres liquides de ponction),Service,6690-2,LOINC
+init.product_calcium_dialysat,Calcium (Dialysat),Service,777-3,LOINC
+init.product_calcium_ionise,Calcium Ionisé,Service,58410-2,LOINC
+init.product_calcium_total,Calcium total,Service,718-7,LOINC
+init.product_chlorure_autres_liquides,Chlorure (Autres liquides de ponction),Service,20570-8,LOINC
+init.product_chlorure_dialysat,Chlorure (Dialysat),Service,6690-2,LOINC
+init.product_chlorures,Chlorures (Chlorémie),Service,777-3,LOINC
+init.product_cholesterol_autres_liquides,Cholesterol (Autres liquides de ponction),Service,58410-2,LOINC
+init.product_cholesterol_total,Cholestérol Total,Service,718-7,LOINC
+init.product_clairance_uree,Clairance de l°urée,Service,20570-8,LOINC
+init.product_clairance_creatinine,Clairance de la créatinine,Service,6690-2,LOINC
+init.product_corps_cetoniques,Corps cétoniques,Service,777-3,LOINC
+init.product_cortisol_8h16h,Cortisol 8h+16h,Service,58410-2,LOINC
+init.product_cortisol_16h,Cortisolémie à 16h,Service,718-7,LOINC
+init.product_cortisol_8h,Cortisolémie à 8h,Service,20570-8,LOINC
+init.product_crp,C-Réactive Protein,Service,6690-2,LOINC
+init.product_ckmb,Créatine Kinase Myocardique (CK - MB),Service,777-3,LOINC
+init.product_ck_total,Créatine kinase totale,Service,58410-2,LOINC
+init.product_creatinine,Créatinine,Service,718-7,LOINC
+init.product_creatinine_urinaire,Créatinine  urinaire,Service,20570-8,LOINC
+init.product_creatinine_autres_liquides,Creatinine (Autres liquides de ponction),Service,6690-2,LOINC
+init.product_ddimer,D. Dimer exclusion,Service,777-3,LOINC
+init.product_densite_urinaire,Densité urinaire,Service,58410-2,LOINC
+init.product_dosage_c3,Dosage C3,Service,718-7,LOINC
+init.product_dosage_c4,Dosage C4,Service,20570-8,LOINC
+init.product_iga,Dosage des Immunoglobulines Ig A,Service,6690-2,LOINC
+init.product_igg,Dosage des Immunoglobulines Ig G,Service,777-3,LOINC
+init.product_igm,Dosage des Immunoglobulines Ig M,Service,58410-2,LOINC
+init.product_eph_acide,Electrophorèse de l°Hemoglobine à ph acide (Confirmation),Service,718-7,LOINC
+init.product_eph_alcalin,Electrophorèse de l°Hemoglobine à ph Alcalin (Dépistage),Service,20570-8,LOINC
+init.product_eph_lipoproteines,Electrophorèse des Lipoprotéines,Service,6690-2,LOINC
+init.product_eph_eps,Electrophorèse des Protéines sériques (EPS),Service,777-3,LOINC
+init.product_eph_urinaires,Electrophorèse des Protéines Urinaires,Service,58410-2,LOINC
+init.product_estradiol_ii,Estradiol II,Service,718-7,LOINC
+init.product_bandelette_urinaire,Examen à la Bandelette urinaire (URIN10),Service,20570-8,LOINC
+init.product_biochimique_urines,Examen biochimique des urines à la bandelette urinaire ( ou ASA),Service,6690-2,LOINC
+init.product_fer,Fer,Service,777-3,LOINC
+init.product_ferritine,Ferritine,Service,58410-2,LOINC
+init.product_fsh,Folliculing Stimuling Hormon (FSH),Service,718-7,LOINC
+init.product_fructosamines,Fructosamines,Service,20570-8,LOINC
+init.product_ggt,Gamma Glutamyl-transferase (GGT),Service,6690-2,LOINC
+init.product_gaz_sang,Gaz du sang arteriel,Service,777-3,LOINC
+init.product_glucose_autres_liquides,Glucose (Autres liquides de ponction),Service,58410-2,LOINC
+init.product_glucose_dialysat,Glucose (Dialysat),Service,718-7,LOINC
+init.product_glycemie_12h,Glycémie à 12H,Service,20570-8,LOINC
+init.product_glycemie_18h,Glycémie à 18H,Service,6690-2,LOINC
+init.product_glycemie_6h,Glycémie à 6H,Service,777-3,LOINC
+init.product_glycemie_jeun,Glycémie à jeun,Service,58410-2,LOINC
+init.product_glycemie_postprandiale,Glycémie post-prandiale (2hrs),Service,718-7,LOINC
+init.product_glycosurie,Glycosurie,Service,20570-8,LOINC
+init.product_hapto,Haptoglobine (HAPTO),Service,6690-2,LOINC
+init.product_hdl_cholesterol,HDL-Cholestérol,Service,777-3,LOINC
+init.product_hba1c,Hémoglobine Glyquée (HbA1C),Service,58410-2,LOINC
+init.product_hgpo,HGPO (T0 - T60 - T120),Service,718-7,LOINC
+init.product_homocysteine,Homocystéine,Service,20570-8,LOINC
+init.product_betahcg,Hormone chronique gonadotrope (Béta-HCG),Service,6690-2,LOINC
+init.product_hgpo_simplifiee,Hyperglycémie provoquée par voie orale simplifiée (HGPO SIMPLIFIEE),Service,777-3,LOINC
+init.product_iep,ImmunoFixation des Protéines sériques (IEP),Service,58410-2,LOINC
+init.product_ionogramme,Ionogramme,Service,718-7,LOINC
+init.product_ionogramme_urinaire,Ionogramme urinaire,Service,20570-8,LOINC
+init.product_lactates,Lactates,Service,6690-2,LOINC
+init.product_ldh,Lactico-deshydrogénase,Service,777-3,LOINC
+init.product_ldl_cholesterol,LDL-Cholestérol,Service,58410-2,LOINC
+init.product_lipase,Lipase,Service,718-7,LOINC
+init.product_lipasurie,Lipasurie,Service,20570-8,LOINC
+init.product_lcr_biochimie,Liquide Céphalo-Rachidien (LCR - Biochimie),Service,6690-2,LOINC
+init.product_ascite_proteines,Liquide d°Ascite (Protéines),Service,777-3,LOINC
+init.product_pleural_proteines,Liquide Pleural (Protéines),Service,58410-2,LOINC
+init.product_lh,Luteining Hormon (LH),Service,718-7,LOINC
+init.product_magnesium,Magnesium,Service,20570-8,LOINC
+init.product_magnesium_urinaire,Magnesium urinaire,Service,6690-2,LOINC
+init.product_microalbumine,Microalbumine,Service,777-3,LOINC
+init.product_myoglobine,Myoglobine,Service,58410-2,LOINC
+init.product_ph_sanguin,pH sanguin,Service,718-7,LOINC
+init.product_ph_urinaire,pH urinaire,Service,20570-8,LOINC
+init.product_phosphatase_alcaline,Phosphatase Alcaline,Service,6690-2,LOINC
+init.product_phosphore,Phosphore,Service,777-3,LOINC
+init.product_phosphore_autres_liquides,Phosphore (Autres liquides de ponction),Service,58410-2,LOINC
+init.product_phosphore_dialysat,Phosphore (Dialysat),Service,718-7,LOINC
+init.product_phosphore_urinaire,Phosphore urinaire,Service,20570-8,LOINC
+init.product_potassium_autres_liquides,Potassium (Autres liquides de ponction),Service,6690-2,LOINC
+init.product_potassium_dialysat,Potassium (Dialysat),Service,777-3,LOINC
+init.product_potassium_kaliemie,Potassium (Kaliémie),Service,58410-2,LOINC
+init.product_palb,Pré-albumine (PALB),Service,718-7,LOINC
+init.product_progesterone,Progesterone,Service,20570-8,LOINC
+init.product_prolactine,Prolactine,Service,6690-2,LOINC
+init.product_proteines_autres_liquides,Protéines (Autres liquides de ponction),Service,777-3,LOINC
+init.product_proteines_24h,Protéines de 24H,Service,58410-2,LOINC
+init.product_proteines_totales,Protéines totales,Service,718-7,LOINC
+init.product_proteines_urinaires,Protéines urinaires,Service,20570-8,LOINC
+init.product_rapport_a1b,RAPPORT A1/B,Service,6690-2,LOINC
+init.product_pbjs,Recherche de Protéines de Bence - Jones (PBJS)_7#,Service,777-3,LOINC
+init.product_pbjs_urinaire,Recherche de Protéines de Bence - Jones (Urinaire)10#,Service,58410-2,LOINC
+init.product_sang_selles,Recherche de sang dans les selles,Service,718-7,LOINC
+init.product_sodium_autres_liquides,Sodium (Autres liquides de ponction),Service,20570-8,LOINC
+init.product_sodium_dialysat,Sodium (Dialysat),Service,6690-2,LOINC
+init.product_sodium_natremie,Sodium (Natrémie),Service,777-3,LOINC
+init.product_osullivan,TEST D° OSULLIVAN (TO - T60),Service,58410-2,LOINC
+init.product_grossesse,Test de grossesse,Service,718-7,LOINC
+init.product_osullivan_diag,TEST DE O°SULLIVAN: Diagnostic,Service,20570-8,LOINC
+init.product_testosterone,Testostérone,Service,6690-2,LOINC
+init.product_tsh,Thyroidin stimulating hormon (TSH),Service,777-3,LOINC
+init.product_ft4,Thyroxine libre (FT4),Service,58410-2,LOINC
+init.product_transaminase,Transaminase.,Service,718-7,LOINC
+init.product_transaminases,Transaminases,Service,20570-8,LOINC
+init.product_transferine,Transferine,Service,6690-2,LOINC
+init.product_triglycerides,Triglycérides,Service,777-3,LOINC
+init.product_triglycerides_autres_liquides,Triglycerides (Autres liquides de ponction),Service,58410-2,LOINC
+init.product_ft3,Tri-lodothyronine libre(ft3),Service,718-7,LOINC
+init.product_tnhs,TROPONINE Hypersensible (TNHS),Service,20570-8,LOINC
+init.product_uree_autres_liquides,Urée (Autres liquides de ponction),Service,6690-2,LOINC
+init.product_uree_azotemie,Urée ou (azotémie),Service,777-3,LOINC
+init.product_uree_urinaire,Urée urinaire,Service,58410-2,LOINC
+init.product_urobilinogene,Urobilinogène et bilirubine,Service,718-7,LOINC
