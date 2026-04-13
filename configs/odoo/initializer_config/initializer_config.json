@@ -24,6 +24,11 @@
       "model_name": "stock.location",
       "folder": "location",
       "field_rules": {}
+    },
+    {
+      "model_name": "product.template",
+      "folder": "product",
+      "field_rules": {}
     }
   ]
 }
