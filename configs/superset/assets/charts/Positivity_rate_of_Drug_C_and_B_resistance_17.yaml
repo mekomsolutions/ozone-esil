@@ -1,0 +1,152 @@
+slice_name: Positivity rate of Drug C and B resistance
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 17__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 17
+  x_axis: code_display
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - positivity_rate
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: obs_date
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_dpzr8t6wnw6_hyjuqdp5yg5
+  - expressionType: SIMPLE
+    subject: value_display
+    operator: IN
+    operatorId: IN
+    comparator:
+    - Positif
+    - "N\xE9gatif"
+    - Negatif
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_xuihq6xk0vc_lj2t9dnygva
+  - expressionType: SIMPLE
+    subject: code_display
+    operator: IN
+    operatorId: IN
+    comparator:
+    - Resistance Test to Drug C
+    - Resistance Test to Drug B
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_bfox4fre5pn_xoxp3omum5
+  order_desc: true
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers:
+  - name: Positivity threshold
+    annotationType: FORMULA
+    sourceType: ''
+    color: null
+    opacity: ''
+    style: solid
+    width: 1
+    showMarkers: false
+    hideLine: false
+    overrides: {}
+    show: true
+    showLabel: false
+    titleColumn: ''
+    descriptionColumns: []
+    timeColumn: ''
+    intervalEndColumn: ''
+    value: '50'
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 5
+query_context: "{\"datasource\":{\"id\":17,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"obs_date\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
+  :\"No filter\"},{\"col\":\"value_display\",\"op\":\"IN\",\"val\":[\"Positif\",\"\
+  N\xE9gatif\",\"Negatif\"]},{\"col\":\"code_display\",\"op\":\"IN\",\"val\":[\"Resistance\
+  \ Test to Drug C\",\"Resistance Test to Drug B\"]}],\"extras\":{\"time_grain_sqla\"\
+  :\"P1D\",\"having\":\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\"\
+  :[{\"timeGrain\":\"P1D\",\"columnType\":\"BASE_AXIS\",\"sqlExpression\":\"code_display\"\
+  ,\"label\":\"code_display\",\"expressionType\":\"SQL\"}],\"metrics\":[\"positivity_rate\"\
+  ],\"orderby\":[[\"positivity_rate\",false]],\"annotation_layers\":[{\"name\":\"\
+  Positivity threshold\",\"annotationType\":\"FORMULA\",\"sourceType\":\"\",\"color\"\
+  :null,\"opacity\":\"\",\"style\":\"solid\",\"width\":1,\"showMarkers\":false,\"\
+  hideLine\":false,\"overrides\":{},\"show\":true,\"showLabel\":false,\"titleColumn\"\
+  :\"\",\"descriptionColumns\":[],\"timeColumn\":\"\",\"intervalEndColumn\":\"\",\"\
+  value\":\"50\"}],\"row_limit\":1000,\"series_columns\":[],\"series_limit\":0,\"\
+  order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"\
+  time_offsets\":[],\"post_processing\":[{\"operation\":\"pivot\",\"options\":{\"\
+  index\":[\"code_display\"],\"columns\":[],\"aggregates\":{\"positivity_rate\":{\"\
+  operator\":\"mean\"}},\"drop_missing_columns\":false}},{\"operation\":\"flatten\"\
+  }]}],\"form_data\":{\"datasource\":\"17__table\",\"viz_type\":\"echarts_timeseries_bar\"\
+  ,\"slice_id\":17,\"x_axis\":\"code_display\",\"time_grain_sqla\":\"P1D\",\"x_axis_sort_asc\"\
+  :true,\"x_axis_sort_series\":\"name\",\"x_axis_sort_series_ascending\":true,\"metrics\"\
+  :[\"positivity_rate\"],\"groupby\":[],\"adhoc_filters\":[{\"expressionType\":\"\
+  SIMPLE\",\"subject\":\"obs_date\",\"operator\":\"TEMPORAL_RANGE\",\"comparator\"\
+  :\"No filter\",\"clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"\
+  isNew\":false,\"datasourceWarning\":false,\"filterOptionName\":\"filter_dpzr8t6wnw6_hyjuqdp5yg5\"\
+  },{\"expressionType\":\"SIMPLE\",\"subject\":\"value_display\",\"operator\":\"IN\"\
+  ,\"operatorId\":\"IN\",\"comparator\":[\"Positif\",\"N\xE9gatif\",\"Negatif\"],\"\
+  clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\"\
+  :false,\"filterOptionName\":\"filter_xuihq6xk0vc_lj2t9dnygva\"},{\"expressionType\"\
+  :\"SIMPLE\",\"subject\":\"code_display\",\"operator\":\"IN\",\"operatorId\":\"IN\"\
+  ,\"comparator\":[\"Resistance Test to Drug C\",\"Resistance Test to Drug B\"],\"\
+  clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\"\
+  :false,\"filterOptionName\":\"filter_bfox4fre5pn_xoxp3omum5\"}],\"order_desc\":true,\"\
+  row_limit\":1000,\"truncate_metric\":true,\"show_empty_columns\":true,\"comparison_type\"\
+  :\"values\",\"annotation_layers\":[{\"name\":\"Positivity threshold\",\"annotationType\"\
+  :\"FORMULA\",\"sourceType\":\"\",\"color\":null,\"opacity\":\"\",\"style\":\"solid\"\
+  ,\"width\":1,\"showMarkers\":false,\"hideLine\":false,\"overrides\":{},\"show\"\
+  :true,\"showLabel\":false,\"titleColumn\":\"\",\"descriptionColumns\":[],\"timeColumn\"\
+  :\"\",\"intervalEndColumn\":\"\",\"value\":\"50\"}],\"forecastPeriods\":10,\"forecastInterval\"\
+  :0.8,\"orientation\":\"vertical\",\"x_axis_title_margin\":15,\"y_axis_title_margin\"\
+  :15,\"y_axis_title_position\":\"Left\",\"sort_series_type\":\"sum\",\"color_scheme\"\
+  :\"supersetColors\",\"only_total\":true,\"show_legend\":true,\"legendType\":\"scroll\"\
+  ,\"legendOrientation\":\"top\",\"x_axis_time_format\":\"smart_date\",\"y_axis_format\"\
+  :\"SMART_NUMBER\",\"truncateXAxis\":true,\"y_axis_bounds\":[null,null],\"rich_tooltip\"\
+  :true,\"tooltipTimeFormat\":\"smart_date\",\"extra_form_data\":{},\"dashboards\"\
+  :[5],\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\"\
+  :\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: db675eef-532a-4e20-ad13-94e1f8cf9f74
+version: 1.0.0
+dataset_uuid: 52d8f0af-778a-4414-8b71-36f5d0a2ff09
