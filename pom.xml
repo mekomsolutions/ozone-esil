@@ -22,7 +22,7 @@
     <eipAnalyticsDhis2Version>1.0.0-SNAPSHOT</eipAnalyticsDhis2Version>
 
     <!-- Madagascar distro version and artifactId -->
-    <madagascarDistroVersion>3.2.1.4</madagascarDistroVersion>
+    <madagascarDistroVersion>3.2.1.6</madagascarDistroVersion>
     <madagascarDistroArtifactId>openelis-madagascar-distro</madagascarDistroArtifactId>
 
     <!-- Classifier for the dependency report artifact -->
