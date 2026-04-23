@@ -9,7 +9,14 @@ services:
       - KEYCLOAK_PUBLIC_URL=${SERVER_SCHEME}://${KEYCLOAK_HOSTNAME}
       - ACCESSION_NUMBER_PREFIX=${ACCESSION_NUMBER_PREFIX}
 
+  fhir.openelis.org:
+    image: itechuw/openelis-global-2-fhir:3.2.1.6
+
+  frontend.openelis.org:
+    image: itechuw/openelis-global-2-frontend:3.2.1.6
+
   oe.openelis.org:
+    image: itechuw/openelis-global-2:3.2.1.6
     volumes:
       - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
       - "${OPENELIS_CONFIG_PATH}/plugins/:/var/lib/openelis-global/plugins"
