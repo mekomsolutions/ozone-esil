@@ -1,7 +1,6 @@
 "id","name","field_description","model_id/id","ttype","index","store","readonly","relation","size","related"
 "init.0f8c8e6a-11b8-4d88-9e89-1a11c2d33e40","x_serial_number_of_modules","Serial number of modules","maintenance.model_maintenance_equipment","char","","True","False","","0",""
 "init.1e4f457e-9578-4707-a70d-11c8dc1bf841","x_module_status","Module Status","maintenance.model_maintenance_equipment","selection","","True","False","","",""
-"init.2a712af4-fab6-4583-b3c6-2c5f11388b51","x_service_status","Service Status","maintenance.model_maintenance_equipment","selection","","True","False","","",""
 "init.3c9e88dc-08d8-4d3f-a776-3e5886352c62","x_instrument_hardware_version","Instrument Hardware Version","maintenance.model_maintenance_equipment","char","","True","False","","0",""
 "init.4d0b26f6-b5cf-45b8-9c74-42ad14e11d73","x_instrument_software_version","Instrument Software Version","maintenance.model_maintenance_equipment","char","","True","False","","0",""
 "init.5ef6187a-7b93-4653-a9fe-56a612785d84","x_calibration_status","Calibration Status","maintenance.model_maintenance_request","selection","","True","False","","",""
