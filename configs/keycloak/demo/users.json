@@ -16,7 +16,12 @@
       ],
       "attributes": {
         "gender": "M",
-        "provider": "true"
+        "provider": "true",
+        "organizations": [
+          "LA2M",
+          "CHUJR",
+          "Central"
+        ]
       },
       "requiredActions": [],
       "realmRoles": [

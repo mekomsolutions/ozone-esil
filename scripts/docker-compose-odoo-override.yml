@@ -1,0 +1,12 @@
+services:
+  fhir-odoo:
+    image: mekomsolutions/fhir-odoo:beta
+    environment:
+      - ODOO_HOST=http://odoo
+      - ODOO_PORT=8069
+      - ODOO_DATABASE=${ODOO_DATABASE}
+      - EIP_ODOO_DRUGS_CATEGORY_EXT_ID=${EIP_ODOO_DRUGS_CATEGORY_EXT_ID}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - FHIR_ODOO_LOCK_REDIS_ENABLED=true
