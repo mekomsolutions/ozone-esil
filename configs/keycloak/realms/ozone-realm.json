@@ -464,6 +464,14 @@
           "attributes": {}
         },
         {
+          "id": "63f9285d-9cec-416a-90c7-8a19f462a2c8",
+          "name": "Maintenance / Equipment Manager",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "${ODOO_CLIENT_UUID}",
+          "attributes": {}
+        },
+        {
           "id": "2f116882-d140-4fcd-9e43-8d7ac49e8e9a",
           "name": "Manufacturing / User",
           "composite": false,
