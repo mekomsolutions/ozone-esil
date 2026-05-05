@@ -237,6 +237,7 @@
                   <directory>${project.basedir}/configs/openelis/properties</directory>
                   <includes>
                     <include>common.properties</include>
+                    <include>SystemConfiguration.properties</include>
                   </includes>
                 </resource>
               </resources>
