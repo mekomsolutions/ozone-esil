@@ -10,13 +10,13 @@ services:
       - ACCESSION_NUMBER_PREFIX=${ACCESSION_NUMBER_PREFIX}
 
   fhir.openelis.org:
-    image: itechuw/openelis-global-2-fhir:3.2.1.6
+    image: itechuw/openelis-global-2-fhir:3.2.1.8
 
   frontend.openelis.org:
-    image: itechuw/openelis-global-2-frontend:3.2.1.6
+    image: itechuw/openelis-global-2-frontend:3.2.1.8
 
   oe.openelis.org:
-    image: itechuw/openelis-global-2:3.2.1.6
+    image: itechuw/openelis-global-2:3.2.1.8
     volumes:
       - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
       - "${OPENELIS_CONFIG_PATH}/plugins/:/var/lib/openelis-global/plugins"

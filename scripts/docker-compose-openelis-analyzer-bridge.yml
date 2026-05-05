@@ -1,6 +1,6 @@
 services:
   oe-analyzer-bridge:
-    image: itechuw/openelis-analyzer-bridge:3.0.1
+    image: itechuw/openelis-analyzer-bridge:3.0.2
     platform: linux/amd64
     ports:
       - "${OE_ANALYZER_BRIDGE_PORT:-8442}:8443" # HTTPS API port
