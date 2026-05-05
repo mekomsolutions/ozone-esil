@@ -1,4 +1,4 @@
-﻿"id","name","x_concept_source","x_concept_code","detailed_type"
+"id","name","x_concept_source","x_concept_code","detailed_type"
 "init.hiv_viral_load","HIV VIRAL LOAD","LOINC","10351-5","consu"
 "init.hepatitis_c_viral_load","HEPATITIS C VIRAL LOAD","LOINC","11011-4","consu"
 "init.hepatitis_c_antibody_plasma","Hepatitis C Antibody(Plasma)","LOINC","16128-1","consu"
