@@ -8,6 +8,9 @@ services:
     volumes:
       - "${OPENELIS_CONFIG_PATH}/astm/configuration.yml:/app/configuration.yml:ro"
       - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
+      - "${OPENELIS_ANALYZER_DROPS_MOUNT_PATH:-${OPENELIS_CONFIG_PATH}/analyzer-drops}:/data/analyzer-drops:ro"
+      - analyzer-imports:/data/analyzer-imports
+      - bridge-state:/data/openelis-analyzer-bridge
     environment:
       SPRING_PROFILE: dev
       LOGGING_LEVEL_ORG_ITECH: TRACE
@@ -19,3 +22,7 @@ services:
       - ozone
       - web
     restart: unless-stopped
+
+volumes:
+  analyzer-imports: ~
+  bridge-state: ~
