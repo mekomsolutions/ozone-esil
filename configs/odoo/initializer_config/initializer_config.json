@@ -29,6 +29,11 @@
       "model_name": "maintenance.stage",
       "folder": "stage",
       "field_rules": {}
+    },
+    {
+      "model_name": "res.users",
+      "folder": "user",
+      "field_rules": {}
     }
   ]
 }
