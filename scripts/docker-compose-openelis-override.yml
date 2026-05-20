@@ -10,13 +10,13 @@ services:
       - ACCESSION_NUMBER_PREFIX=${ACCESSION_NUMBER_PREFIX}
 
   fhir.openelis.org:
-    image: itechuw/openelis-global-2-fhir:3.2.1.8.2
+    image: itechuw/openelis-global-2-fhir:3.2.1.9
 
   frontend.openelis.org:
-    image: itechuw/openelis-global-2-frontend:3.2.1.8.2
+    image: itechuw/openelis-global-2-frontend:3.2.1.9
 
   oe.openelis.org:
-    image: itechuw/openelis-global-2:3.2.1.8.2
+    image: itechuw/openelis-global-2:3.2.1.9
     environment:
       DEFAULT_PW: ${OPENELIS_DEFAULT_PASSWORD}
       TZ: ${TZ:-UTC}
