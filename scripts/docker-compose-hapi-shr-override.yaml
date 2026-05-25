@@ -6,3 +6,4 @@ services:
       - hapi.fhir.allow_placeholder_references=true
       - hapi.fhir.allow_external_references=true
       - hapi.fhir.client_id_strategy=ANY
+      - hapi.fhir.update_enabled=true
