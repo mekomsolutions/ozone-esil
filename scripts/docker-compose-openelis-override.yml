@@ -12,13 +12,13 @@ services:
       - OPENELIS_BANNER_TEXT_FR=${OPENELIS_BANNER_TEXT_FR}
 
   fhir.openelis.org:
-    image: itechuw/openelis-global-2-fhir:3.2.1.9
+    image: itechuw/openelis-global-2-fhir:3.2.1.10
 
   frontend.openelis.org:
-    image: itechuw/openelis-global-2-frontend:3.2.1.9
+    image: itechuw/openelis-global-2-frontend:3.2.1.10
 
   oe.openelis.org:
-    image: itechuw/openelis-global-2:3.2.1.9
+    image: itechuw/openelis-global-2:3.2.1.10
     environment:
       DEFAULT_PW: ${OPENELIS_DEFAULT_PASSWORD}
       TZ: ${TZ:-UTC}
