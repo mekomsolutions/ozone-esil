@@ -1,0 +1,36 @@
+slice_name: Stock levels
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 19__table
+  viz_type: table
+  slice_id: 15
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup: {}
+  metrics: []
+  all_columns:
+  - facility
+  - warehouse
+  - product_name
+  - quantity
+  percent_metrics: []
+  adhoc_filters: []
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":19,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["facility","warehouse","product_name","quantity"],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"19__table","viz_type":"table","slice_id":15,"query_mode":"raw","groupby":[],"time_grain_sqla":"P1D","temporal_columns_lookup":{},"metrics":[],"all_columns":["facility","warehouse","product_name","quantity"],"percent_metrics":[],"adhoc_filters":[],"order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 5d60b303-e421-4e3b-a0a4-61131fd48f50
+version: 1.0.0
+dataset_uuid: be4fbdb0-f25b-48b1-9c89-5cd75427527e

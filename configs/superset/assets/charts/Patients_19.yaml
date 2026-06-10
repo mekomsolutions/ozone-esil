@@ -1,0 +1,45 @@
+slice_name: Patients
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 16__table
+  viz_type: table
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    birth_date: true
+    deceased_time: true
+  all_columns:
+  - given
+  - family
+  - gender
+  - is_deceased
+  - birth_date
+  - facility_name
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: birth_date
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":16,"type":"table"},"force":false,"queries":[{"filters":[{"col":"birth_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["given","family","gender","is_deceased","birth_date","facility_name"],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"16__table","viz_type":"table","query_mode":"raw","groupby":[],"time_grain_sqla":"P1D","temporal_columns_lookup":{"birth_date":true,"deceased_time":true},"all_columns":["given","family","gender","is_deceased","birth_date","facility_name"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","subject":"birth_date","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: a9b9d327-7b71-4b52-b225-30b4a51424bd
+version: 1.0.0
+dataset_uuid: d12188bd-6f8c-424d-8c13-b4e8e34d73e1
