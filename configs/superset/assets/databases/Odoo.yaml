@@ -1,0 +1,16 @@
+database_name: Odoo
+sqlalchemy_uri: postgresql://postgres:{ODOO_DB_PASSWORD}@odoo:5432/odoo
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  metadata_params: {}
+  engine_params: {}
+  metadata_cache_timeout: {}
+  schemas_allowed_for_file_upload: []
+uuid: 0d454a0e-f97e-4bf5-9b8b-c03c78d76b2e
+version: 1.0.0
