@@ -515,7 +515,7 @@
       "openelis": [
         {
           "name": "oeg-Global Administrator",
-          "description": "Global Administrator",
+          "description": "Administrateur global",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -523,7 +523,7 @@
         },
         {
           "name": "oeg-Pathologist",
-          "description": "Access to Pathology Page",
+          "description": "Accès à la page de pathologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -531,7 +531,7 @@
         },
         {
           "name": "oeg-User Account Administrator",
-          "description": "Add/remove users and assign roles.",
+          "description": "Ajouter/supprimer des utilisateurs et attribuer des rôles.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -539,7 +539,7 @@
         },
         {
           "name": "oeg-Audit Trail",
-          "description": "Able to view the audit trail",
+          "description": "Autorisé à consulter la piste d'audit",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -547,7 +547,7 @@
         },
         {
           "name": "oeg-Analyser Import",
-          "description": "Acces to Analyser Results Page",
+          "description": "Accès à la page des résultats de l'analyseur",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -555,7 +555,7 @@
         },
         {
           "name": "oeg-Cytopathologist",
-          "description": "Access to Cytology Page",
+          "description": "Accès à la page de cytologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -563,7 +563,7 @@
         },
         {
           "name": "oeg-Results-AllLabUnits",
-          "description": "Enter and review results.",
+          "description": "Saisir et examiner les résultats.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -571,7 +571,7 @@
         },
         {
           "name": "oeg-Validation-AllLabUnits",
-          "description": "A person who can validate results",
+          "description": "Personne autorisée à valider les résultats",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -579,7 +579,7 @@
         },
         {
           "name": "oeg-Reports-AllLabUnits",
-          "description": "Generate reports.",
+          "description": "Générer des rapports.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -587,7 +587,7 @@
         },
         {
           "name": "oeg-Reception-AllLabUnits",
-          "description": "Sample entry and patient management.",
+          "description": "Saisie des échantillons et gestion des patients.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -597,7 +597,7 @@
       "openelis-1": [
         {
           "name": "oeg-Global Administrator",
-          "description": "Global Administrator",
+          "description": "Administrateur global",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -605,7 +605,7 @@
         },
         {
           "name": "oeg-Pathologist",
-          "description": "Access to Pathology Page",
+          "description": "Accès à la page de pathologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -613,7 +613,7 @@
         },
         {
           "name": "oeg-User Account Administrator",
-          "description": "Add/remove users and assign roles.",
+          "description": "Ajouter/supprimer des utilisateurs et attribuer des rôles.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -621,7 +621,7 @@
         },
         {
           "name": "oeg-Audit Trail",
-          "description": "Able to view the audit trail",
+          "description": "Autorisé à consulter la piste d'audit",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -629,7 +629,7 @@
         },
         {
           "name": "oeg-Analyser Import",
-          "description": "Acces to Analyser Results Page",
+          "description": "Accès à la page des résultats de l'analyseur",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -637,7 +637,7 @@
         },
         {
           "name": "oeg-Cytopathologist",
-          "description": "Access to Cytology Page",
+          "description": "Accès à la page de cytologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -645,7 +645,7 @@
         },
         {
           "name": "oeg-Results-AllLabUnits",
-          "description": "Enter and review results.",
+          "description": "Saisir et examiner les résultats.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -653,7 +653,7 @@
         },
         {
           "name": "oeg-Validation-AllLabUnits",
-          "description": "A person who can validate results",
+          "description": "Personne autorisée à valider les résultats",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -661,7 +661,7 @@
         },
         {
           "name": "oeg-Reports-AllLabUnits",
-          "description": "Generate reports.",
+          "description": "Générer des rapports.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -669,7 +669,7 @@
         },
         {
           "name": "oeg-Reception-AllLabUnits",
-          "description": "Sample entry and patient management.",
+          "description": "Saisie des échantillons et gestion des patients.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -679,7 +679,7 @@
       "openelis-2": [
         {
           "name": "oeg-Global Administrator",
-          "description": "Global Administrator",
+          "description": "Administrateur global",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -687,7 +687,7 @@
         },
         {
           "name": "oeg-Pathologist",
-          "description": "Access to Pathology Page",
+          "description": "Accès à la page de pathologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -695,7 +695,7 @@
         },
         {
           "name": "oeg-User Account Administrator",
-          "description": "Add/remove users and assign roles.",
+          "description": "Ajouter/supprimer des utilisateurs et attribuer des rôles.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -703,7 +703,7 @@
         },
         {
           "name": "oeg-Audit Trail",
-          "description": "Able to view the audit trail",
+          "description": "Autorisé à consulter la piste d'audit",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -711,7 +711,7 @@
         },
         {
           "name": "oeg-Analyser Import",
-          "description": "Acces to Analyser Results Page",
+          "description": "Accès à la page des résultats de l'analyseur",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -719,7 +719,7 @@
         },
         {
           "name": "oeg-Cytopathologist",
-          "description": "Access to Cytology Page",
+          "description": "Accès à la page de cytologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -727,7 +727,7 @@
         },
         {
           "name": "oeg-Results-AllLabUnits",
-          "description": "Enter and review results.",
+          "description": "Saisir et examiner les résultats.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -735,7 +735,7 @@
         },
         {
           "name": "oeg-Validation-AllLabUnits",
-          "description": "A person who can validate results",
+          "description": "Personne autorisée à valider les résultats",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -743,7 +743,7 @@
         },
         {
           "name": "oeg-Reports-AllLabUnits",
-          "description": "Generate reports.",
+          "description": "Générer des rapports.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -751,7 +751,7 @@
         },
         {
           "name": "oeg-Reception-AllLabUnits",
-          "description": "Sample entry and patient management.",
+          "description": "Saisie des échantillons et gestion des patients.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
