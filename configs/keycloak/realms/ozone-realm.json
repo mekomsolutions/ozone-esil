@@ -304,6 +304,7 @@
         {
           "id": "b641134b-a231-41ab-89a9-85a990d994b2",
           "name": "Admin",
+          "description": "Administrateur",
           "composite": false,
           "clientRole": true,
           "containerId": "92f84cf0-9e57-4526-b385-bcb83865ee0b",
@@ -312,6 +313,7 @@
         {
           "id": "903bcb3a-bb4b-475a-9eff-4235d31d505e",
           "name": "Gamma",
+          "description": "Gamma",
           "composite": false,
           "clientRole": true,
           "containerId": "92f84cf0-9e57-4526-b385-bcb83865ee0b",
@@ -320,6 +322,7 @@
         {
           "id": "a0911038-a17b-4f7c-9e22-7ff256d16850",
           "name": "Alpha",
+          "description": "Alpha",
           "composite": false,
           "clientRole": true,
           "containerId": "92f84cf0-9e57-4526-b385-bcb83865ee0b",
@@ -328,6 +331,7 @@
         {
           "id": "6f63ed95-d52d-4c17-b2d3-c7a4c3ecb2c6",
           "name": "sql_lab",
+          "description": "SQL Lab",
           "composite": false,
           "clientRole": true,
           "containerId": "92f84cf0-9e57-4526-b385-bcb83865ee0b",
@@ -338,6 +342,7 @@
         {
           "id": "adac6edf-23b9-4ad5-b3c4-bd47d35a23bf",
           "name": "Administration / Settings",
+          "description": "Administration / Paramètres",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -346,6 +351,7 @@
         {
           "id": "84088d84-7447-4d1b-9982-75559309f324",
           "name": "Sales / Administrator",
+          "description": "Ventes / Administrateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -354,6 +360,7 @@
         {
           "id": "d8d18b5a-d30e-4216-829d-805bf36a7301",
           "name": "Inventory / Administrator",
+          "description": "Inventaire / Administrateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -362,6 +369,7 @@
         {
           "id": "1d21220d-c6a7-4158-8f13-11eb081f3fe3",
           "name": "Purchase / Administrator",
+          "description": "Achats / Administrateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -370,6 +378,7 @@
         {
           "id": "c35376aa-5d88-496a-90d7-352f0b59988c",
           "name": "Manufacturing / Administrator",
+          "description": "Fabrication / Administrateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -378,6 +387,7 @@
         {
           "id": "d1df53e6-1605-4d1d-8b4c-d716c89b8960",
           "name": "Invoicing / Billing Administrator",
+          "description": "Facturation / Administrateur de la facturation",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -386,6 +396,7 @@
         {
           "id": "eae4a38c-8c1b-4e1e-9f07-45448e662a19",
           "name": "Invoicing / Billing",
+          "description": "Facturation / Facturation",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -394,6 +405,7 @@
         {
           "id": "6948818a-cec9-4479-87d7-62307b599037",
           "name": "Bank / Validate bank account",
+          "description": "Banque / Valider le compte bancaire",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -402,6 +414,7 @@
         {
           "id": "e72eabde-bb9b-455f-99ca-85d637974f4e",
           "name": "Administration / Access Rights",
+          "description": "Administration / Droits d'accès",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -410,6 +423,7 @@
         {
           "id": "05b229db-a8f2-49d8-98d1-31950127b166",
           "name": "Technical / Basic Pricelists",
+          "description": "Technique / Listes de prix de base",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -418,6 +432,7 @@
         {
           "id": "98358779-803c-452a-bdec-5c8777a2a5d2",
           "name": "Technical / Advanced Pricelists",
+          "description": "Technique / Listes de prix avancées",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -426,6 +441,7 @@
         {
           "id": "a0042b0e-28a3-451c-a9ba-2d657cfa5349",
           "name": "Technical / Allow the cash rounding management",
+          "description": "Technique / Autoriser la gestion des arrondis de caisse",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -434,6 +450,7 @@
         {
           "id": "62955b7f-214d-441b-b704-534c730f5090",
           "name": "Technical / Analytic Accounting",
+          "description": "Technique / Comptabilité analytique",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -442,6 +459,7 @@
         {
           "id": "032b792b-8cb2-4d2f-a358-06e01f0a17d6",
           "name": "User types / Internal User",
+          "description": "Types d'utilisateur / Utilisateur interne",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -450,6 +468,7 @@
         {
           "id": "49a2f4c6-708e-4293-a797-077e88c0420d",
           "name": "Extra Rights / Multi Companies",
+          "description": "Droits supplémentaires / Sociétés multiples",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -458,6 +477,7 @@
         {
           "id": "8634abcf-5bcf-4984-b447-42efe1eab56a",
           "name": "Extra Rights / Technical Features",
+          "description": "Droits supplémentaires / Fonctionnalités techniques",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -466,6 +486,7 @@
         {
           "id": "63f9285d-9cec-416a-90c7-8a19f462a2c8",
           "name": "Maintenance / Equipment Manager",
+          "description": "Maintenance / Gestionnaire d'équipement",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -474,6 +495,7 @@
         {
           "id": "2f116882-d140-4fcd-9e43-8d7ac49e8e9a",
           "name": "Manufacturing / User",
+          "description": "Fabrication / Utilisateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -482,6 +504,7 @@
         {
           "id": "c379d581-313c-4bc3-b88a-38e8f946be89",
           "name": "Purchase / User",
+          "description": "Achats / Utilisateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -490,6 +513,7 @@
         {
           "id": "dfb88b71-6102-4421-bc9b-79e4bd389637",
           "name": "Dashboard / Admin",
+          "description": "Tableau de bord / Administrateur",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -498,6 +522,7 @@
         {
           "id": "9ec4dcc3-2848-4c7b-8c48-2108dbd2a6e4",
           "name": "Technical / Manage Packages",
+          "description": "Technique / Gérer les colis",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
@@ -506,98 +531,17 @@
         {
           "id": "90570192-1909-4e10-9874-efc720f0a698",
           "name": "Technical / Receive notifications in Odoo",
+          "description": "Technique / Recevoir les notifications dans Odoo",
           "composite": false,
           "clientRole": true,
           "containerId": "${ODOO_CLIENT_UUID}",
           "attributes": {}
         }
       ],
-      "openelis": [
-        {
-          "name": "oeg-Global Administrator",
-          "description": "Global Administrator",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Pathologist",
-          "description": "Access to Pathology Page",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-User Account Administrator",
-          "description": "Add/remove users and assign roles.",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Audit Trail",
-          "description": "Able to view the audit trail",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Analyser Import",
-          "description": "Acces to Analyser Results Page",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Cytopathologist",
-          "description": "Access to Cytology Page",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Results-AllLabUnits",
-          "description": "Enter and review results.",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Validation-AllLabUnits",
-          "description": "A person who can validate results",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Reports-AllLabUnits",
-          "description": "Generate reports.",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        },
-        {
-          "name": "oeg-Reception-AllLabUnits",
-          "description": "Sample entry and patient management.",
-          "composite": false,
-          "clientRole": true,
-          "containerId": "openelis-role",
-          "attributes": {}
-        }
-      ],
       "openelis-1": [
         {
           "name": "oeg-Global Administrator",
-          "description": "Global Administrator",
+          "description": "Administrateur global",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -605,7 +549,7 @@
         },
         {
           "name": "oeg-Pathologist",
-          "description": "Access to Pathology Page",
+          "description": "Accès à la page de pathologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -613,7 +557,7 @@
         },
         {
           "name": "oeg-User Account Administrator",
-          "description": "Add/remove users and assign roles.",
+          "description": "Ajouter/supprimer des utilisateurs et attribuer des rôles.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -621,7 +565,7 @@
         },
         {
           "name": "oeg-Audit Trail",
-          "description": "Able to view the audit trail",
+          "description": "Autorisé à consulter la piste d'audit",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -629,7 +573,7 @@
         },
         {
           "name": "oeg-Analyser Import",
-          "description": "Acces to Analyser Results Page",
+          "description": "Accès à la page des résultats de l'analyseur",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -637,7 +581,7 @@
         },
         {
           "name": "oeg-Cytopathologist",
-          "description": "Access to Cytology Page",
+          "description": "Accès à la page de cytologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -645,7 +589,7 @@
         },
         {
           "name": "oeg-Results-AllLabUnits",
-          "description": "Enter and review results.",
+          "description": "Saisir et examiner les résultats.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -653,7 +597,7 @@
         },
         {
           "name": "oeg-Validation-AllLabUnits",
-          "description": "A person who can validate results",
+          "description": "Personne autorisée à valider les résultats",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -661,7 +605,7 @@
         },
         {
           "name": "oeg-Reports-AllLabUnits",
-          "description": "Generate reports.",
+          "description": "Générer des rapports.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -669,7 +613,7 @@
         },
         {
           "name": "oeg-Reception-AllLabUnits",
-          "description": "Sample entry and patient management.",
+          "description": "Saisie des échantillons et gestion des patients.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -679,7 +623,7 @@
       "openelis-2": [
         {
           "name": "oeg-Global Administrator",
-          "description": "Global Administrator",
+          "description": "Administrateur global",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -687,7 +631,7 @@
         },
         {
           "name": "oeg-Pathologist",
-          "description": "Access to Pathology Page",
+          "description": "Accès à la page de pathologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -695,7 +639,7 @@
         },
         {
           "name": "oeg-User Account Administrator",
-          "description": "Add/remove users and assign roles.",
+          "description": "Ajouter/supprimer des utilisateurs et attribuer des rôles.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -703,7 +647,7 @@
         },
         {
           "name": "oeg-Audit Trail",
-          "description": "Able to view the audit trail",
+          "description": "Autorisé à consulter la piste d'audit",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -711,7 +655,7 @@
         },
         {
           "name": "oeg-Analyser Import",
-          "description": "Acces to Analyser Results Page",
+          "description": "Accès à la page des résultats de l'analyseur",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -719,7 +663,7 @@
         },
         {
           "name": "oeg-Cytopathologist",
-          "description": "Access to Cytology Page",
+          "description": "Accès à la page de cytologie",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -727,7 +671,7 @@
         },
         {
           "name": "oeg-Results-AllLabUnits",
-          "description": "Enter and review results.",
+          "description": "Saisir et examiner les résultats.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -735,7 +679,7 @@
         },
         {
           "name": "oeg-Validation-AllLabUnits",
-          "description": "A person who can validate results",
+          "description": "Personne autorisée à valider les résultats",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -743,7 +687,7 @@
         },
         {
           "name": "oeg-Reports-AllLabUnits",
-          "description": "Generate reports.",
+          "description": "Générer des rapports.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -751,7 +695,7 @@
         },
         {
           "name": "oeg-Reception-AllLabUnits",
-          "description": "Sample entry and patient management.",
+          "description": "Saisie des échantillons et gestion des patients.",
           "composite": false,
           "clientRole": true,
           "containerId": "openelis-role",
@@ -1606,9 +1550,9 @@
     },
     {
       "id": "8f1e8824-293a-4e34-aad9-08db889ac596",
-      "clientId": "openelis",
-      "name": "OpenELIS Global",
-      "description": "OpenELIS Global",
+      "clientId": "openelis-1",
+      "name": "OpenELIS Global 1",
+      "description": "OpenELIS Global 1",
       "rootUrl": "${OPENELIS_PUBLIC_URL}",
       "adminUrl": "${OPENELIS_PUBLIC_URL}",
       "baseUrl": "${OPENELIS_PUBLIC_URL}",
@@ -1655,66 +1599,6 @@
         "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
         "saml_single_logout_service_url_post": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
         "saml_single_logout_service_url_redirect": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
-      },
-      "authenticationFlowBindingOverrides": {},
-      "fullScopeAllowed": true,
-      "nodeReRegistrationTimeout": -1,
-      "defaultClientScopes": [
-        "role_list"
-      ],
-      "optionalClientScopes": []
-    },
-    {
-      "id": "6d29e693-7feb-46e2-998b-19a2ad3d231f",
-      "clientId": "openelis-1",
-      "name": "OpenELIS Global 1",
-      "description": "OpenELIS Global 1",
-      "rootUrl": "${OPENELIS_PUBLIC_URL_1}",
-      "adminUrl": "${OPENELIS_PUBLIC_URL_1}",
-      "baseUrl": "${OPENELIS_PUBLIC_URL_1}",
-      "surrogateAuthRequired": false,
-      "enabled": true,
-      "alwaysDisplayInConsole": false,
-      "clientAuthenticatorType": "client-secret",
-      "redirectUris": [
-        "${OPENELIS_PUBLIC_URL_1}/*",
-        "https://${OPENELIS_HOSTNAME_1}/*"
-      ],
-      "webOrigins": [
-        "${OPENELIS_PUBLIC_URL_1}/*"
-      ],
-      "notBefore": 0,
-      "bearerOnly": false,
-      "consentRequired": false,
-      "standardFlowEnabled": true,
-      "implicitFlowEnabled": false,
-      "directAccessGrantsEnabled": true,
-      "serviceAccountsEnabled": false,
-      "publicClient": false,
-      "frontchannelLogout": false,
-      "protocol": "saml",
-      "attributes": {
-        "saml.assertion.signature": "false",
-        "saml.force.post.binding": "true",
-        "saml.encrypt": "false",
-        "saml.server.signature": "true",
-        "saml.server.signature.keyinfo.ext": "false",
-        "saml.signing.certificate": "MIICtzCCAZ8CBgGZoEABADANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDDBRPcGVuRUxJUy1HbG9iYWxfc2FtbDAeFw0yNTEwMDExNDQ3NTNaFw0zNTEwMDExNDQ5MzNaMB8xHTAbBgNVBAMMFE9wZW5FTElTLUdsb2JhbF9zYW1sMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxxPe77o7ZzSnQ9piRZ0uGHdq2yyhmsS136Akmf6TvYAPxlCuQgHmWoK1TaZ2lYFOuWx0I8ePu/g7lIp6lmpCEne99jzQFtzXwpBl5Ua2ZL31BjYuy3WPMtpcsV4PXoqZC2AHnybAvUM0v4rGYgSyRJdK791sFp58eQEn/k2hK0JUzAJeXUDDuhPqr8wrcctrLc1dlhHzs4GFSPtpcstD7vzE9XTVnyCIoXKaO6ECS68l0Wt+4HN4GoJY4R7QeDrlOb88ay+RsgczSxH8AA23KAH855vuIz0fAtiygeh5UQMnd2kZdB6j5BNjB/eOx9xb0M4D8MsoMoPLrjAVjVO4aQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQC4jOQaVfDxJ+21TsRtBDqvxkJ8a+eG4xTb2PdYQdcJpAVsCPMxYM08VcRTRha2okNx6IyARxTPu77NwT6y2lghFvH3Rw2S7jydhh/zCJkXq4O2NBOVkzNX3iirWb2DZPOPvWAKqNmf87Nesfgo8uGxU1ggRU6zhdXfXkCHIIIrCEmtiQy7RBlQZJA5QWxZCdublJXrt1T9wvpCKaairv6wa8c6f9Prg8nnKQuYfBbLCDzpEuHNVji9BUu7mR2/g6F5eJR88B1IPFb8Bg0QeCd3LWA7CpxU7gZuBUwNlBT8kdPS8JBdNNBUqd3vfh/7042yOE01hsQXip843Ty0k8OP",
-        "saml.artifact.binding.identifier": "p+uy5jRINfNLONQETephsAznwv4=",
-        "saml.artifact.binding": "false",
-        "saml.signature.algorithm": "RSA_SHA256",
-        "saml_force_name_id_format": "false",
-        "saml.client.signature": "false",
-        "saml.authnstatement": "true",
-        "display.on.consent.screen": "false",
-        "saml_name_id_format": "username",
-        "saml.signing.private.key": "MIIEpAIBAAKCAQEAxxPe77o7ZzSnQ9piRZ0uGHdq2yyhmsS136Akmf6TvYAPxlCuQgHmWoK1TaZ2lYFOuWx0I8ePu/g7lIp6lmpCEne99jzQFtzXwpBl5Ua2ZL31BjYuy3WPMtpcsV4PXoqZC2AHnybAvUM0v4rGYgSyRJdK791sFp58eQEn/k2hK0JUzAJeXUDDuhPqr8wrcctrLc1dlhHzs4GFSPtpcstD7vzE9XTVnyCIoXKaO6ECS68l0Wt+4HN4GoJY4R7QeDrlOb88ay+RsgczSxH8AA23KAH855vuIz0fAtiygeh5UQMnd2kZdB6j5BNjB/eOx9xb0M4D8MsoMoPLrjAVjVO4aQIDAQABAoIBADkpiYAIV3pA8i5XjJQ0l8HKuFIKtLR9+0Mk9p2JLd7h4KWvEPo/FWez1F9hhvdS08oGTCrh6HGuy1zRjnWWOTaYT2FfANkvvHxPfhKhhUnUCYEpGbKuJNoTPT5opb0dyugrQMUAGaO+omzFakVG1/E+B/Rr/ddY1qDgJh2tKLQEq1LxZildJ1oTv+jvAmb9zorjcRUQRvMSYi8iR9GHp40DyV8TdqbvlHXd10XWWvlWwVrFvblI01ekrN9Qx4Pc109U0A+d/w7HEIdDLk0oj8UTaPYf61fO5hvKzS8c520YgC2xzkW+AIsWwXXElzSVH1GcDsxFFNnrwAENLO6rpokCgYEA/ZYa6uVW26U+T3RGx2juXImzGViMce84tacmMyi3B6UFAbidtTZOuQCN7+5JDsyoIzGoNb6T0qXpO6s7M9Wca6apQl3sMb/KWNYFZ4D75OJnweB6TLN536E3UsRBiVC0SYVE1R+1MmaApQi5L1NHyKQa5gqkvbWtjL/HHm870gMCgYEAyPjyyCEaMOaC6+UYkVz154ifbEGjfWwcxX16Bm7fFWZM5CXIp9hscTlqyP9C/W5oMBFeVldpVmH12/BLub0yR6w5b+I/HwR3JG5qEpnNpxkFDHRAKkvmNgMt1egDhNsrj5WNlumCCRQf48glkrn7xrJTnHdVY5AscReITyMzViMCgYEAlC1dBzsBmREiqtzf6u/GsK4JyFq0nnLRqVvFd4loAgCMP2g4R0Y3k+TeC4AqkopGCWKfzt/Qkvs9oQ86ZdyBLWpSZyRout0+CNDukX+OMT2WsXRRInaRVXpn0GY7gVh2MKu9/+cqQwwgSc8iHqREQtqZmShJAU2i3qbFXGRVCS8CgYATsxNZOqVulanPpa060nnoMCQwYF6+NJK9aQdFCikj19tBodKBYV1/27jz6tGONfxQeeNdY0QYC5Il9O/3TOxYyjD3Hp5BVBa5o3kSSbE25+Tuy5ZejwIJ2VXs2ck+hJ1IfchbOphce3SEx2GneEONvn0joS7li4RPsZbS6whlMQKBgQDAfAHZD3j+S+zjrnmKYPeA905fTp/0uvvG0aqe7CHtGGJLM9twOfzKgTEJqQilU1+nYbFyfpr/BEYuu+YhwojjXf1qjpMZrie3jFiQ6Plhi4k5IhtACsPgqHAL3RHt4zRhblIJf61ZOPsMo3asW1LVQ65B5CNaVK2ffaqP3GVufQ==",
-        "saml.allow.ecp.flow": "false",
-        "saml.onetimeuse.condition": "false",
-        "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
-        "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
-        "saml_single_logout_service_url_post": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME_1}/api/OpenELIS-Global/logout/saml2/slo/keycloak",
-        "saml_single_logout_service_url_redirect": "${SERVER_SCHEME}://${OPENELIS_HOSTNAME_1}/api/OpenELIS-Global/logout/saml2/slo/keycloak"
       },
       "authenticationFlowBindingOverrides": {},
       "fullScopeAllowed": true,
@@ -2534,7 +2418,7 @@
       }
     ]
   },
-  "internationalizationEnabled": false,
+  "internationalizationEnabled": true,
   "supportedLocales": [],
   "authenticationFlows": [
     {
