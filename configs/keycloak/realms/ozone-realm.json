@@ -2418,7 +2418,7 @@
       }
     ]
   },
-  "internationalizationEnabled": false,
+  "internationalizationEnabled": true,
   "supportedLocales": [],
   "authenticationFlows": [
     {
