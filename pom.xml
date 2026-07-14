@@ -192,7 +192,6 @@
                           <includes>
                               <include>docker-compose-keycloak-override.yml</include>
                               <include>docker-compose-openelis-override.yml</include>
-                              <include>docker-compose-odoo-override.yml</include>
                               <include>docker-compose-openelis-analyzer-bridge.yml</include>
                           </includes>
                       </resource>
