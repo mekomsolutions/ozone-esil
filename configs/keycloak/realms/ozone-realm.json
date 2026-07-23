@@ -797,7 +797,146 @@
       ]
     }
   },
-  "groups": [],
+  "groups": [
+    {
+      "name": "openelis-1-administrators",
+      "path": "/openelis-1-administrators",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "openelis-1": [
+          "oeg-Global Administrator",
+          "oeg-User Account Administrator",
+          "oeg-Audit Trail"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "openelis-1-lab-users",
+      "path": "/openelis-1-lab-users",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "openelis-1": [
+          "oeg-Reception-AllLabUnits",
+          "oeg-Results-AllLabUnits",
+          "oeg-Reports-AllLabUnits",
+          "oeg-Analyser Import"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "openelis-1-pathologists",
+      "path": "/openelis-1-pathologists",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "openelis-1": [
+          "oeg-Pathologist",
+          "oeg-Cytopathologist",
+          "oeg-Results-AllLabUnits",
+          "oeg-Validation-AllLabUnits",
+          "oeg-Reports-AllLabUnits"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "openelis-2-administrators",
+      "path": "/openelis-2-administrators",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "openelis-2": [
+          "oeg-Global Administrator",
+          "oeg-User Account Administrator",
+          "oeg-Audit Trail"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "openelis-2-lab-users",
+      "path": "/openelis-2-lab-users",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "openelis-2": [
+          "oeg-Reception-AllLabUnits",
+          "oeg-Results-AllLabUnits",
+          "oeg-Reports-AllLabUnits",
+          "oeg-Analyser Import"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "openelis-2-pathologists",
+      "path": "/openelis-2-pathologists",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "openelis-2": [
+          "oeg-Pathologist",
+          "oeg-Cytopathologist",
+          "oeg-Results-AllLabUnits",
+          "oeg-Validation-AllLabUnits",
+          "oeg-Reports-AllLabUnits"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "odoo-administrators",
+      "path": "/odoo-administrators",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "odoo": [
+          "User types / Internal User",
+          "Administration / Settings",
+          "Administration / Access Rights",
+          "Sales / Administrator",
+          "Inventory / Administrator",
+          "Purchase / Administrator",
+          "Manufacturing / Administrator",
+          "Invoicing / Billing Administrator",
+          "Dashboard / Admin"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "odoo-operations-users",
+      "path": "/odoo-operations-users",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "odoo": [
+          "User types / Internal User",
+          "Manufacturing / User",
+          "Purchase / User"
+        ]
+      },
+      "subGroups": []
+    },
+    {
+      "name": "odoo-billing-users",
+      "path": "/odoo-billing-users",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {
+        "odoo": [
+          "User types / Internal User",
+          "Invoicing / Billing",
+          "Bank / Validate bank account"
+        ]
+      },
+      "subGroups": []
+    }
+  ],
   "defaultRole": {
     "id": "dbfb95f2-0555-459a-9278-d0d30e7b0837",
     "name": "default-roles-ozone",
