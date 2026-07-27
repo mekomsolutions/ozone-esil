@@ -797,7 +797,28 @@
       ]
     }
   },
-  "groups": [],
+  "groups": [
+    {
+      "id": "b50a817d-d404-4d00-84c4-f8f13952c5e8",
+      "name": "openelis-1-admins",
+      "description": "",
+      "path": "/openelis-1-admins",
+      "subGroups": [],
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {}
+    },
+    {
+      "id": "ef303e06-dfcc-45a6-8a8a-9d35bf22055f",
+      "name": "openelis-2-admins",
+      "description": "",
+      "path": "/openelis-2-admins",
+      "subGroups": [],
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {}
+    }
+  ],
   "defaultRole": {
     "id": "dbfb95f2-0555-459a-9278-d0d30e7b0837",
     "name": "default-roles-ozone",
@@ -805,6 +826,10 @@
     "composite": true,
     "clientRole": false,
     "containerId": "ozone"
+  },
+  "adminPermissionsClient": {
+    "id": "bc6c7c97-c828-4138-9b48-d8594f97ecdd",
+    "clientId": "admin-permissions"
   },
   "requiredCredentials": [
     "password"
@@ -951,6 +976,388 @@
         "offline_access",
         "microprofile-jwt"
       ]
+    },
+    {
+      "id": "bc6c7c97-c828-4138-9b48-d8594f97ecdd",
+      "clientId": "admin-permissions",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "redirectUris": [],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "authorizationServicesEnabled": true,
+      "publicClient": false,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {
+        "realm_client": "false"
+      },
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "defaultClientScopes": [],
+      "optionalClientScopes": [],
+      "authorizationSettings": {
+        "allowRemoteResourceManagement": true,
+        "policyEnforcementMode": "ENFORCING",
+        "resources": [
+          {
+            "name": "Clients",
+            "type": "Clients",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "view"
+              },
+              {
+                "name": "map-roles-client-scope"
+              },
+              {
+                "name": "map-roles"
+              },
+              {
+                "name": "manage"
+              },
+              {
+                "name": "map-roles-composite"
+              }
+            ]
+          },
+          {
+            "name": "Users",
+            "type": "Users",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "manage-group-membership"
+              },
+              {
+                "name": "view"
+              },
+              {
+                "name": "impersonate"
+              },
+              {
+                "name": "map-roles"
+              },
+              {
+                "name": "reset-password"
+              },
+              {
+                "name": "manage"
+              }
+            ]
+          },
+          {
+            "name": "Groups",
+            "type": "Groups",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "manage-members"
+              },
+              {
+                "name": "view"
+              },
+              {
+                "name": "manage-membership"
+              },
+              {
+                "name": "view-members"
+              },
+              {
+                "name": "manage"
+              },
+              {
+                "name": "impersonate-members"
+              }
+            ]
+          },
+          {
+            "name": "Roles",
+            "type": "Roles",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "map-role-composite"
+              },
+              {
+                "name": "map-role-client-scope"
+              },
+              {
+                "name": "map-role"
+              }
+            ]
+          },
+          {
+            "name": "8f1e8824-293a-4e34-aad9-08db889ac596",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "view"
+              },
+              {
+                "name": "map-roles-client-scope"
+              },
+              {
+                "name": "map-roles"
+              },
+              {
+                "name": "manage"
+              },
+              {
+                "name": "map-roles-composite"
+              }
+            ]
+          },
+          {
+            "name": "70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "view"
+              },
+              {
+                "name": "map-roles-client-scope"
+              },
+              {
+                "name": "map-roles"
+              },
+              {
+                "name": "manage"
+              },
+              {
+                "name": "map-roles-composite"
+              }
+            ]
+          },
+          {
+            "name": "758c3f60-4d57-4ea1-aa85-33df3eeeb4f1",
+            "ownerManagedAccess": false,
+            "attributes": {},
+            "uris": [],
+            "scopes": [
+              {
+                "name": "view"
+              },
+              {
+                "name": "map-roles-client-scope"
+              },
+              {
+                "name": "map-roles"
+              },
+              {
+                "name": "manage"
+              },
+              {
+                "name": "map-roles-composite"
+              }
+            ]
+          }
+        ],
+        "policies": [
+          {
+            "name": "policy-openelis-1-admins",
+            "description": "Applies permissions to members of the openelis-1-admins group",
+            "type": "group",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "groups": "[{\"path\":\"/openelis-1-admins\",\"extendChildren\":false}]",
+              "groupsClaim": ""
+            }
+          },
+          {
+            "name": "policy-openelis-2-admins",
+            "description": "Applies permissions to members of the openelis-2-admins group",
+            "type": "group",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "groups": "[{\"path\":\"/openelis-2-admins\",\"extendChildren\":false}]",
+              "groupsClaim": ""
+            }
+          },
+          {
+            "name": "users-openelis-1-admins",
+            "description": "Allows OpenELIS 1 administrators to create and manage users and assign permitted client roles",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Users",
+              "resources": "[\"Users\"]",
+              "scopes": "[\"manage\",\"view\",\"map-roles\"]",
+              "applyPolicies": "[\"policy-openelis-1-admins\"]"
+            }
+          },
+          {
+            "name": "users-openelis-2-admins",
+            "description": "Allows OpenELIS 2 administrators to create and manage users and assign permitted client roles",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Users",
+              "resources": "[\"Users\"]",
+              "scopes": "[\"manage\",\"view\",\"map-roles\"]",
+              "applyPolicies": "[\"policy-openelis-2-admins\"]"
+            }
+          },
+          {
+            "name": "clients-openelis-1-admins",
+            "description": "Allows OpenELIS 1 administrators to view openelis-1 and odoo and map their client roles",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Clients",
+              "resources": "[\"70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be\",\"8f1e8824-293a-4e34-aad9-08db889ac596\"]",
+              "scopes": "[\"view\",\"map-roles\"]",
+              "applyPolicies": "[\"policy-openelis-1-admins\"]"
+            }
+          },
+          {
+            "name": "clients-openelis-2-admins",
+            "description": "Allows OpenELIS 2 administrators to view openelis-2 and odoo and map their client roles",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Clients",
+              "resources": "[\"758c3f60-4d57-4ea1-aa85-33df3eeeb4f1\",\"70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be\"]",
+              "scopes": "[\"view\",\"map-roles\"]",
+              "applyPolicies": "[\"policy-openelis-2-admins\"]"
+            }
+          }
+        ],
+        "scopes": [
+          {
+            "name": "manage-group-membership"
+          },
+          {
+            "name": "map-roles-client-scope"
+          },
+          {
+            "name": "view-members"
+          },
+          {
+            "name": "map-role"
+          },
+          {
+            "name": "reset-password"
+          },
+          {
+            "name": "manage"
+          },
+          {
+            "name": "impersonate-members"
+          },
+          {
+            "name": "manage-members"
+          },
+          {
+            "name": "view"
+          },
+          {
+            "name": "impersonate"
+          },
+          {
+            "name": "manage-membership"
+          },
+          {
+            "name": "map-role-composite"
+          },
+          {
+            "name": "map-roles"
+          },
+          {
+            "name": "map-role-client-scope"
+          },
+          {
+            "name": "map-roles-composite"
+          }
+        ],
+        "decisionStrategy": "UNANIMOUS",
+        "authorizationSchema": {
+          "resourceTypes": {
+            "Groups": {
+              "type": "Groups",
+              "scopes": [
+                "manage-membership",
+                "manage-members",
+                "view-members",
+                "impersonate-members",
+                "manage",
+                "view"
+              ],
+              "scopeAliases": {}
+            },
+            "Roles": {
+              "type": "Roles",
+              "scopes": [
+                "map-role",
+                "map-role-client-scope",
+                "map-role-composite"
+              ],
+              "scopeAliases": {}
+            },
+            "Clients": {
+              "type": "Clients",
+              "scopes": [
+                "map-roles-composite",
+                "manage",
+                "map-roles",
+                "map-roles-client-scope",
+                "view"
+              ],
+              "scopeAliases": {}
+            },
+            "Users": {
+              "type": "Users",
+              "scopes": [
+                "impersonate",
+                "map-roles",
+                "manage",
+                "manage-group-membership",
+                "reset-password",
+                "view"
+              ],
+              "scopeAliases": {
+                "impersonate": [
+                  "impersonate-members"
+                ],
+                "view": [
+                  "view-members"
+                ],
+                "manage": [
+                  "manage-members"
+                ]
+              },
+              "groupType": "Groups"
+            }
+          }
+        }
+      }
     },
     {
       "id": "82a67af5-880c-44f6-8a76-c24d6b77e811",
@@ -1335,7 +1742,7 @@
         "pkce.code.challenge.method": "S256"
       },
       "authenticationFlowBindingOverrides": {},
-      "fullScopeAllowed": false,
+      "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": 0,
       "protocolMappers": [
         {
@@ -3106,5 +3513,6 @@
     "clientSessionMaxLifespan": "0"
   },
   "userManagedAccessAllowed": false,
-  "keycloakVersion": "26.4.5"
+  "keycloakVersion": "26.4.5",
+  "adminPermissionsEnabled": true
 }
