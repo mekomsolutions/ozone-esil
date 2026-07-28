@@ -2,5 +2,8 @@ services:
   keycloak:
     volumes:
       - "${KEYCLOAK_BINARIES_PATH:-keycloak-binaries}/themes:/opt/keycloak/providers"
+    environment:
+      - OPENELIS_1_ADMIN_DEFAULT_PASSWORD=${OPENELIS_1_ADMIN_DEFAULT_PASSWORD}
+      - OPENELIS_2_ADMIN_DEFAULT_PASSWORD=${OPENELIS_2_ADMIN_DEFAULT_PASSWORD}
 volumes:
   keycloak-binaries: ~

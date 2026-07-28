@@ -799,20 +799,30 @@
   },
   "groups": [
     {
-      "id": "b50a817d-d404-4d00-84c4-f8f13952c5e8",
-      "name": "openelis-1-admins",
+      "id": "f9c98579-c075-486d-b860-523c31575670",
+      "name": "admin-1-users",
       "description": "",
-      "path": "/openelis-1-admins",
+      "path": "/admin-1-users",
       "subGroups": [],
       "attributes": {},
       "realmRoles": [],
       "clientRoles": {}
     },
     {
-      "id": "ef303e06-dfcc-45a6-8a8a-9d35bf22055f",
-      "name": "openelis-2-admins",
+      "id": "9300d816-a8df-4a20-ad3c-020ddfcdf09e",
+      "name": "admin-2-users",
       "description": "",
-      "path": "/openelis-2-admins",
+      "path": "/admin-2-users",
+      "subGroups": [],
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {}
+    },
+    {
+      "id": "a7496c3c-bdcf-42a3-ba15-e491259036d4",
+      "name": "delegated-admin-accounts",
+      "description": "",
+      "path": "/delegated-admin-accounts",
       "subGroups": [],
       "attributes": {},
       "realmRoles": [],
@@ -894,6 +904,60 @@
       "disableableCredentialTypes": [],
       "requiredActions": [],
       "notBefore": 0
+    },
+    {
+      "id": "63b7847e-8ce8-4a86-a771-f599f34730a1",
+      "createdTimestamp": 1785162600000,
+      "username": "openelis-1-admin",
+      "firstName": "Openelis 1",
+      "lastName": "Admin",
+      "email": "openelis-1-admin@example.com",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${OPENELIS_1_ADMIN_DEFAULT_PASSWORD}",
+          "temporary": false
+        }
+      ],
+      "clientRoles": {
+        "realm-management": [
+          "query-groups",
+          "query-users",
+          "query-clients"
+        ]
+      },
+      "notBefore": 0,
+      "groups": ["/delegated-admin-accounts"]
+    },
+    {
+      "id": "58bf5d05-075a-497d-9c7f-90e39ee2e55d",
+      "createdTimestamp": 1785162600000,
+      "username": "openelis-2-admin",
+      "firstName": "Openelis 2",
+      "lastName": "Admin",
+      "email": "openelis-2-admin@example.com",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${OPENELIS_2_ADMIN_DEFAULT_PASSWORD}",
+          "temporary": false
+        }
+      ],
+      "clientRoles": {
+        "realm-management": [
+          "query-groups",
+          "query-users",
+          "query-clients"
+        ]
+      },
+      "notBefore": 0,
+      "groups": ["/delegated-admin-accounts"]
     },
     {
       "id": "6762eb08-3271-489b-87e7-03357c7966a4",
@@ -1128,7 +1192,7 @@
             ]
           },
           {
-            "name": "70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be",
+            "name": "${ODOO_CLIENT_UUID}",
             "ownerManagedAccess": false,
             "attributes": {},
             "uris": [],
@@ -1176,77 +1240,180 @@
         ],
         "policies": [
           {
-            "name": "policy-openelis-1-admins",
-            "description": "Applies permissions to members of the openelis-1-admins group",
-            "type": "group",
+            "name": "policy-admin-1",
+            "description": "",
+            "type": "user",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
-              "groups": "[{\"path\":\"/openelis-1-admins\",\"extendChildren\":false}]",
-              "groupsClaim": ""
+              "users": "[\"openelis-1-admin\"]"
             }
           },
           {
-            "name": "policy-openelis-2-admins",
-            "description": "Applies permissions to members of the openelis-2-admins group",
-            "type": "group",
+            "name": "policy-admin-2",
+            "description": "",
+            "type": "user",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
-              "groups": "[{\"path\":\"/openelis-2-admins\",\"extendChildren\":false}]",
-              "groupsClaim": ""
+              "users": "[\"openelis-2-admin\"]"
             }
           },
           {
-            "name": "users-openelis-1-admins",
-            "description": "Allows OpenELIS 1 administrators to create and manage users and assign permitted client roles",
+            "name": "policy-both-delegated-admins",
+            "description": "",
+            "type": "user",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "users": "[\"openelis-1-admin\",\"openelis-2-admin\"]"
+            }
+          },
+          {
+            "name": "deny-delegated-admins",
+            "description": "",
+            "type": "user",
+            "logic": "NEGATIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "users": "[\"openelis-1-admin\",\"openelis-2-admin\"]"
+            }
+          },
+          {
+            "name": "deny-admin-2",
+            "description": "",
+            "type": "user",
+            "logic": "NEGATIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "users": "[\"openelis-2-admin\"]"
+            }
+          },
+          {
+            "name": "deny-admin-1",
+            "description": "",
+            "type": "user",
+            "logic": "NEGATIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "users": "[\"openelis-1-admin\"]"
+            }
+          },
+          {
+            "name": "delegated-admins-all-users",
+            "description": "",
             "type": "scope",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
               "defaultResourceType": "Users",
               "resources": "[\"Users\"]",
-              "scopes": "[\"manage\",\"view\",\"map-roles\"]",
-              "applyPolicies": "[\"policy-openelis-1-admins\"]"
+              "scopes": "[\"manage\",\"map-roles\",\"view\",\"manage-group-membership\"]",
+              "applyPolicies": "[\"policy-both-delegated-admins\"]"
             }
           },
           {
-            "name": "users-openelis-2-admins",
-            "description": "Allows OpenELIS 2 administrators to create and manage users and assign permitted client roles",
+            "name": "admin-1-users",
+            "description": "",
             "type": "scope",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
-              "defaultResourceType": "Users",
-              "resources": "[\"Users\"]",
-              "scopes": "[\"manage\",\"view\",\"map-roles\"]",
-              "applyPolicies": "[\"policy-openelis-2-admins\"]"
+              "defaultResourceType": "Groups",
+              "resources": "[\"f9c98579-c075-486d-b860-523c31575670\"]",
+              "scopes": "[\"view-members\",\"manage-members\",\"view\",\"manage-membership\"]",
+              "applyPolicies": "[\"policy-admin-1\"]"
             }
           },
           {
-            "name": "clients-openelis-1-admins",
-            "description": "Allows OpenELIS 1 administrators to view openelis-1 and odoo and map their client roles",
+            "name": "admin-2-users",
+            "description": "",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Groups",
+              "resources": "[\"9300d816-a8df-4a20-ad3c-020ddfcdf09e\"]",
+              "scopes": "[\"view-members\",\"manage-members\",\"view\",\"manage-membership\"]",
+              "applyPolicies": "[\"policy-admin-2\"]"
+            }
+          },
+          {
+            "name": "protect-delegated-admin-accounts",
+            "description": "",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Groups",
+              "resources": "[\"a7496c3c-bdcf-42a3-ba15-e491259036d4\"]",
+              "scopes": "[\"view-members\",\"manage-members\",\"manage-membership\"]",
+              "applyPolicies": "[\"deny-delegated-admins\"]"
+            }
+          },
+          {
+            "name": "admin-1-client-a",
+            "description": "",
             "type": "scope",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
               "defaultResourceType": "Clients",
-              "resources": "[\"70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be\",\"8f1e8824-293a-4e34-aad9-08db889ac596\"]",
-              "scopes": "[\"view\",\"map-roles\"]",
-              "applyPolicies": "[\"policy-openelis-1-admins\"]"
+              "resources": "[\"8f1e8824-293a-4e34-aad9-08db889ac596\"]",
+              "scopes": "[\"map-roles\",\"view\"]",
+              "applyPolicies": "[\"policy-admin-1\"]"
             }
           },
           {
-            "name": "clients-openelis-2-admins",
-            "description": "Allows OpenELIS 2 administrators to view openelis-2 and odoo and map their client roles",
+            "name": "delegated-admins-client-b",
+            "description": "",
             "type": "scope",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
               "defaultResourceType": "Clients",
-              "resources": "[\"758c3f60-4d57-4ea1-aa85-33df3eeeb4f1\",\"70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be\"]",
-              "scopes": "[\"view\",\"map-roles\"]",
-              "applyPolicies": "[\"policy-openelis-2-admins\"]"
+              "resources": "[\"70a0e2fd-2bb2-4417-9fc6-22cdca1bb5be\"]",
+              "scopes": "[\"map-roles\",\"view\"]",
+              "applyPolicies": "[\"policy-both-delegated-admins\"]"
+            }
+          },
+          {
+            "name": "admin-2-client-c",
+            "description": "",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Clients",
+              "resources": "[\"758c3f60-4d57-4ea1-aa85-33df3eeeb4f1\"]",
+              "scopes": "[\"map-roles\",\"view\"]",
+              "applyPolicies": "[\"policy-admin-2\"]"
+            }
+          },
+          {
+            "name": "deny-admin-2-from-admin-1-users",
+            "description": "",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Groups",
+              "resources": "[\"f9c98579-c075-486d-b860-523c31575670\"]",
+              "scopes": "[\"view-members\",\"manage-members\",\"view\",\"manage-membership\"]",
+              "applyPolicies": "[\"deny-admin-2\"]"
+            }
+          },
+          {
+            "name": "deny-admin-1-from-admin-2-users",
+            "description": "",
+            "type": "scope",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "defaultResourceType": "Groups",
+              "resources": "[\"9300d816-a8df-4a20-ad3c-020ddfcdf09e\"]",
+              "scopes": "[\"manage-members\",\"view-members\",\"view\",\"manage-membership\"]",
+              "applyPolicies": "[\"deny-admin-1\"]"
             }
           }
         ],
