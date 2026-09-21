@@ -24,8 +24,8 @@ services:
       # volume mount path above. Spring Boot maps this env var to the
       # bridge.file.state-store-path config property.
       BRIDGE_FILE_STATE_STORE_PATH: /data/openelis-analyzer-bridge/state.db
-      # Align with CI harness: HttpForwardingRouter appends /astm, /hl7, /csv
-      ORG_ITECH_AHB_FORWARD_HTTP_SERVER_URI: https://openelisglobal-webapp:8443/OpenELIS-Global/analyzer
+      # Delivery URI is set in configuration.yml, beside healthUri and on the same
+      # host. Setting it here overrides that file and separates the two.
       ORG_ITECH_AHB_FORWARD_HTTP_SERVER_USERNAME: ${ORG_ITECH_AHB_FORWARD_HTTP_SERVER_USERNAME:-admin}
       ORG_ITECH_AHB_FORWARD_HTTP_SERVER_PASSWORD: ${OE_ADMIN_PASSWORD:-adminADMIN!}
       ORG_ITECH_AHB_FORWARD_HTTP_SERVER_INSECURE_TLS: "true"
