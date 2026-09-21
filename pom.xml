@@ -121,6 +121,8 @@
                     <exclude>distro/configs/analytics/liquibase/analytics/changelogs/openmrs-*</exclude>
                     <!-- Exclude all files in analytics/dsl/flattening/queries -->
                     <exclude>distro/configs/analytics/dsl/flattening/queries/**</exclude>
+                    <!-- Exclude default Superset configs -->
+                    <exclude>distro/configs/superset/assets/**</exclude>
                   </excludes>
                 </resource>
                 <resource>
