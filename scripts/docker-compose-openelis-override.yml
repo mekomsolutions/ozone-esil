@@ -12,15 +12,15 @@ services:
       - OPENELIS_BANNER_TEXT_FR=${OPENELIS_BANNER_TEXT_FR}
 
   fhir.openelis.org:
-    image: itechuw/openelis-global-2-fhir:3.2.2.0
+    image: itechuw/openelis-global-2-fhir:3.2.3.0
 
   frontend.openelis.org:
-    image: itechuw/openelis-global-2-frontend:3.2.2.0
+    image: itechuw/openelis-global-2-frontend:3.2.3.0
     volumes:
       - "${OPENELIS_CONFIG_PATH}/translation:/usr/share/nginx/html/translation:ro"
 
   oe.openelis.org:
-    image: itechuw/openelis-global-2:3.2.2.0
+    image: itechuw/openelis-global-2:3.2.3.0
     environment:
       DEFAULT_PW: ${OPENELIS_DEFAULT_PASSWORD}
       TZ: ${TZ:-UTC}
@@ -32,6 +32,9 @@ services:
       OEG_FACILITY_ID: ${OEG_FACILITY_ID}
       OPENELIS_FHIR_STORE_URL: ${OPENELIS_FHIR_STORE_URL}
       OPENELIS_ANALYZER_BRIDGE_URL: ${OPENELIS_ANALYZER_BRIDGE_URL:-https://oe-analyzer-bridge:8443}
+      ANALYZER_BRIDGE_URL: ${OPENELIS_ANALYZER_BRIDGE_URL:-https://oe-analyzer-bridge:8443}
+      ANALYZER_BRIDGE_USERNAME: admin
+      ANALYZER_BRIDGE_PASSWORD: ${OE_ADMIN_PASSWORD:-adminADMIN!}
     volumes:
       - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
       - "${OPENELIS_CONFIG_PATH}/plugins/:/var/lib/openelis-global/plugins"
