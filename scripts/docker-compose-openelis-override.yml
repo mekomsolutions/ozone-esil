@@ -32,6 +32,9 @@ services:
       OEG_FACILITY_ID: ${OEG_FACILITY_ID}
       OPENELIS_FHIR_STORE_URL: ${OPENELIS_FHIR_STORE_URL}
       OPENELIS_ANALYZER_BRIDGE_URL: ${OPENELIS_ANALYZER_BRIDGE_URL:-https://oe-analyzer-bridge:8443}
+      ANALYZER_BRIDGE_URL: ${OPENELIS_ANALYZER_BRIDGE_URL:-https://oe-analyzer-bridge:8443}
+      ANALYZER_BRIDGE_USERNAME: admin
+      ANALYZER_BRIDGE_PASSWORD: ${OE_ADMIN_PASSWORD:-adminADMIN!}
     volumes:
       - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
       - "${OPENELIS_CONFIG_PATH}/plugins/:/var/lib/openelis-global/plugins"

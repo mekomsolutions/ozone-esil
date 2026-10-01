@@ -9,11 +9,15 @@ services:
       - "${OPENELIS_CONFIG_PATH}/astm/configuration.yml:/app/configuration.yml:ro"
       - "${OPENELIS_TRUST_STORE:-key_trust-store-volume}:/etc/openelis-global"
       - "${OPENELIS_ANALYZER_DROPS_MOUNT_PATH:-${OPENELIS_CONFIG_PATH}/analyzer-drops}:/data/analyzer-drops:ro"
+      - "${OPENELIS_CONFIG_PATH}/analyzer-profiles:/app/analyzer-profiles:ro"
       - analyzer-imports:/data/analyzer-imports
       - bridge-state:/data/openelis-analyzer-bridge
     environment:
       SPRING_PROFILE: dev
-      LOGGING_LEVEL_ORG_ITECH: TRACE
+      LOGGING_LEVEL_ORG_ITECH: INFO # TRACE logs whole clinical messages
+      TZ: Indian/Antananarivo # ASTM test times carry no zone
+      BRIDGE_OUTBOX_DB_PATH: /data/openelis-analyzer-bridge/outbox.db # on the bridge-state volume
+      BRIDGE_PROFILE_CATALOG_SHIPPED_PATTERN: "file:/app/analyzer-profiles/**/*.json"
       # Bridge admin/upload UI Basic Auth. Aligned with OE admin so the
       # distro ships one credential pair and closes the bridge/changeme
       # default. Keys per bridge SecurityConfig (BRIDGE_AUTH_PASSWORD is a no-op).
